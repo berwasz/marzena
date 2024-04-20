@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="pl" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="DiImtSN" resname="Welcome">
+        <source>Welcome</source>
+        <target>Witaj</target>
+      </trans-unit>
+      <trans-unit id="NYB6wbr" resname="Apartments">
+        <source>Apartments</source>
+        <target>Apartamenty</target>
+      </trans-unit>
+      <trans-unit id="G4Vl0OH" resname="Marzena's new page">
+        <source>Marzena's new page</source>
+        <target>Nowa strona Marzeny</target>
+      </trans-unit>
+      <trans-unit id="NSz8dJ5" resname="Gallery">
+        <source>Gallery</source>
+        <target>Galeria</target>
+      </trans-unit>
+      <trans-unit id="K1w9JnI" resname="Contact">
+        <source>Contact</source>
+        <target>Kontakt</target>
+      </trans-unit>
+      <trans-unit id="hZIxL3P" resname="Design and implementation">
+        <source>Design and implementation</source>
+        <target>Projekt i wykonanie</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>Start</target>
+      </trans-unit>
+      <trans-unit id="4GIstok" resname="Send email">
+        <source>Send email</source>
+        <target>Wyślij email</target>
+      </trans-unit>
+      <trans-unit id="fZRRzED" resname="Send email to Marzena">
+        <source>Send email to Marzena</source>
+        <target>Wyślij email do Marzeny</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

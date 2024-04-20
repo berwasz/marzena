@@ -8,7 +8,14 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class MarzenaController extends AbstractController
 {
-    #[Route('/', name: 'app_homepage')]
+
+    #[Route('/')]
+    public function indexNoLocale(): Response
+    {
+        return $this->redirectToRoute('app_homepage', ['_locale' => 'en']);
+    }
+
+    #[Route('/{_locale<%app.supported_locales%>}', name: 'app_homepage')]
     public function index(): Response
     {
         return $this->render('homepage.html.twig', [

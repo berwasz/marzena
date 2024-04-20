@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Marzena{% endblock %}
+{% block title %}{{'Apartments'|trans}} Marzena{% endblock %}
 
 {% block body %}
 
@@ -12,56 +12,12 @@
             <i style="color: black !important;" class="bi bi-arrow-up h2"></i>
         </button>
 
-        <header>
-        <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-transparent p-0" style="height:68px">
-            <div class="nawigacja container-fluid d-flex flex-row p-0 shadow">
-             
-                    <div class="navbar-brand d-flex align-items-center z-1">
-                    <img src="{{ asset ('images/logo_marzena.png')}}" width="60" height="60" alt="Logo" title="Apartamenty Marzena" class="d-inline-block align-text-top ms-1 me-1">
-                        <span style="color:black">Apartamenty Marzena</span>
-                    </div>
-                    
-                    <div class="d-flex justify-content-end">
-                        <div id="nav-icon3" class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                
-                <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNav">
-                    <ul class="navbar-nav ms-auto flex-nowrap">
-                        {# <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="bi bi-house-door"></i></a>
-                        </li> #}
-                        <li id="start-up" class="nav-item">
-                            <a href="#start" title="O mnie" class="nav-link">Start</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#oferta" title="Oferta" class="nav-link">Oferta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#galeria" title="Galeria" class="nav-link">Galeria</a>
-                        </li>
-                        {# <li class="nav-item">
-                            <a href="#cennik" title="Cennik" class="nav-link">Cennik</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#rejestracja" title="Rejestracja" class="nav-link">Rejestracja</a>
-                        </li> #}
-                        <li class="nav-item">
-                            <a href="#kontakt" title="Kontakt" class="nav-link">Kontakt</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
         <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true">
-            <div id="start" class="container-fluid vh-100 d-flex align-items-center justify-content-center" title="Apartamenty Marzena">
+            <div id="start" class="container-fluid vh-100 d-flex align-items-center justify-content-center" title="{{'Apartments'|trans}} Marzena">
                 <div class="caveat-brush-regular text-center">
-                    <h5 class="text">Lorem ipsum dolor sit amet</h5>
-                    <h1 class="text">Lorem ipsum dolor sit amet</h1>
+                    <h5 class="text display-6">{{ 'Welcome'|trans }}!</h5>
+                    <h1 class="text display-2">{{"Marzena's new page"|trans}}</h1>
                     
                     <div id="arrowAnim">
                         <div class="arrowSliding">
@@ -80,8 +36,8 @@
 
                 </div>
             </div>
-            <div id="oferta" class="container-fluid d-flex flex-column align-items-center min-vh-100" title="Apartamenty Marzena">
-                    <div class="caveat-brush-regular text-center h2 pb-5">Oferta</div>    
+            <div id="oferta" class="container-fluid d-flex flex-column align-items-center min-vh-100" title="{{'Apartments'|trans}} Marzena">
+                    <h2 class="section-title caveat-brush-regular text-center display-2 pb-5">{{'Apartments'|trans}}</h1>    
                     <div id="cards" class="container d-flex flex-column">
                         
                         <div class="d-flex justify-content-end align-items-center">
@@ -92,7 +48,7 @@
                                     </div>
                                     <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title caveat-brush-regular">Lorem ipsum</h5>
+                                        <h5 class="card-title caveat-brush-regular display-5">Lorem ipsum</h5>
                                         <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                     </div>
                                     </div>
@@ -106,7 +62,7 @@
 
                                     <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title caveat-brush-regular">Lorem ipsum</h5>
+                                        <h5 class="card-title caveat-brush-regular display-5">Lorem ipsum</h5>
                                         <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                     </div>
                                     </div>
@@ -120,8 +76,8 @@
                     </div>
               
             </div>
-            <div id="galeria" class="container-fluid d-flex flex-column align-items-center min-vh-100 border-top" title="Apartamenty Marzena">
-                <div class="caveat-brush-regular text-center h2 pb-5">Galeria</div>    
+            <div id="galeria" class="container-fluid d-flex flex-column align-items-center min-vh-100 border-top" title="{{'Apartments'|trans}} Marzena">
+                <h2 class="section-title caveat-brush-regular text-center display-2 pb-5">{{'Gallery'|trans}}</h2>    
                 <div class="container d-flex flex-column">
                     
                     <div class="row d-flex flex-wrap align-items-center" data-bs-toggle="modal" data-bs-target="#lightbox">
@@ -199,22 +155,22 @@
                     </div>
                 </div>
             </div>
-            <div id="kontakt" class="container-fluid d-flex flex-column min-vh-100" title="Apartamenty Marzena">
-                <div class="kontakt text caveat-brush-regular text-center h2 pb-5">Kontakt</div>
+            <div id="kontakt" class="container-fluid d-flex flex-column min-vh-100">
+                <h2 class="section-title kontakt text caveat-brush-regular text-center display-2 pb-5">{{'Contact'|trans}}</h2>
                 <div class="container text">
                     <footer class="py-5 text-center">
                         <div class="row justify-content-center">
                             <div class="col-lg-4 mb-3">
-                                <h5 class="text-nowrap">Apartamenty Marzena</h5>
+                                <h5 class="text-nowrap">{{'Apartments'|trans}} Marzena</h5>
                                 <ul class="nav flex-column">
                                     <li class="text mb-1">Adres</li>
                                     <li class="text mb-1">Adres</li>
                                     <li class="text mb-1">Adres</li>
                                     <li class="text text-nowrap mb-1"><i class="bi bi-telephone-fill"></i>  +7543 93458345</li>
-                                    <li class="text text-nowrap mb-1"><a class="text text-decoration-none" href="mailto:someone@example.com" target="_top"><i class="bi bi-envelope-at-fill"></i> Wyślij e-mail</a></li>
+                                    <li class="text text-nowrap mb-1"><a class="text text-decoration-none" href="mailto:someone@example.com" target="_top" title="{{'Send email to Marzena'|trans}}"><i class="bi bi-envelope-at-fill"></i> {{'Send email'|trans}}</a></li>
                                     <li class="text-center pt-2">
-                                        <a class="p-2" href="#"><i class="h5 bi bi-instagram"></i></a>
-                                        <a class="p-2" href="#"><i class="h5 bi bi-facebook"></i></a>
+                                        <a class="p-2" href="#" title="instagram"><i class="h5 bi bi-instagram"></i></a>
+                                        <a class="p-2" href="#" title="instagram"><i class="h5 bi bi-facebook"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -223,21 +179,27 @@
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4429.017462647057!2d9.020331942624289!3d45.628604289905184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47869159b2e042bd%3A0xb507c6b15c96294f!2s21047%20Saronno%2C%20Prowincja%20Varese%2C%20W%C5%82ochy!5e0!3m2!1spl!2spl!4v1713546477910!5m2!1spl!2spl" width="300" height="300" style="border-radius: 8px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                             <div class="col-lg-4 mb-3">
-                                <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=550710&language=pl&region=PL&timeFormat=HH:mm&windUnit=mph&systemOfMeasurement=imperial&temperatureUnit=celsius" name="CW2" scrolling="no" width="300" height="300" frameborder="0" style="border-radius: 8px"></iframe>
+                                {% if app.request.locale == 'pl' %}
+                                <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=550710&language=pl&region=PL&timeFormat=HH:mm&windUnit=kmh&systemOfMeasurement=imperial&temperatureUnit=celsius" name="CW2" scrolling="no" width="300" height="300" frameborder="0" style="border-radius: 8px"></iframe>
+                                {% elseif  app.request.locale == 'it' %}
+                                <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=550710&language=it&region=IT&timeFormat=HH:mm&windUnit=kmh&systemOfMeasurement=imperial&temperatureUnit=celsius" name="CW2" scrolling="no" width="300" height="300" frameborder="0" style="border-radius: 8px"></iframe>
+                                {% else %}
+                                <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=550710&language=en&region=EN&timeFormat=HH:mm&windUnit=kmh&systemOfMeasurement=imperial&temperatureUnit=celsius" name="CW2" scrolling="no" width="300" height="300" frameborder="0" style="border-radius: 8px"></iframe>
+                                {% endif %}
                             </div>
 
                             </div>
 
                             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                             <p>&copy; 2024 Marzena Szmidt. All rights reserved.</p>
-                            <p>Projekt i wykonanie: BenMedia Bernard Waszczyk</p>
+                            <p>{{'Design and implementation'|trans}}: BenMedia Bernard Waszczyk</p>
 
                         </div>
                     </footer>
                 </div>
             </div>
         </div>
-    </header>
+    
 
 
 <!-- A Lightbox is basically a slider (carousel) inside of a modal.

@@ -105,6 +105,16 @@ body {
   padding-bottom: 2rem;
 }
 
+@media screen and (max-width:728px) {
+
+
+  #oferta, #galeria, #kontakt {
+    margin-top: 0px;
+    padding-bottom: 1rem;
+  }
+}
+
+
 .bi, .kontakt {
   color: #ffffff;
 }
@@ -175,6 +185,40 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: fixed;
+    top: auto;
+    right: 0;
+    left: auto;
+    font-size: medium;
+    border-radius: 0%;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  text-align: center;
+  border-radius: 0%;
+}
+
+.nav-link-lang {
+  /* border-top: 1px solid grey !important; */
+  color: black !important;
+  padding-bottom: 0;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  margin-bottom: 0;
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .text {
@@ -290,9 +334,8 @@ body {
   @media screen and (max-width: 991px){
     .navbar-nav {
       background-color: #ffffff;
-      
     }
-    a.nav-link {
+    a.nav-link, a.nav-link-lang {
       border-top: 1px solid grey;
     }
     a.nav-link.active {
