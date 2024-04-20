@@ -64,3 +64,10 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
   history.pushState("", document.title, window.location.pathname);
 }
+
+const dropDownItem = document.querySelector('#lang-dropdown');
+
+dropDownItem.addEventListener('click', function () {
+  console.log('Udało się');
+  window.location.reload();
+});
