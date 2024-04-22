@@ -41,6 +41,10 @@
         <source>Send email to Marzena</source>
         <target>Wyślij email do Marzeny</target>
       </trans-unit>
+      <trans-unit id="_ffEFyJ" resname="more photos">
+        <source>more photos</source>
+        <target>więcej zdjęć</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -1,5 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto&display=swap');
 
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  margin: 0;
+  background-color: #dce0e9;
+  transition: opacity 400ms ease-in-out, visibility 0s 400ms;
+}
+
+.show-preloader {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* .loader-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  z-index: 10000;
+} */
+
+
+
+.custom-loader {
+  position: absolute;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:conic-gradient(#0000 10%,#6C7AF4);
+  mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation:s3 1s infinite linear;
+}
+@keyframes s3 {to{transform: rotate(1turn)}}
+
 .caveat-brush-regular {
   font-family: "Caveat Brush", cursive;
   font-weight: 400;
@@ -74,7 +121,8 @@
 
 html {
     font-size: 12px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    overflow: visible;
   }
 
 @media screen and (min-width: 300px) {
@@ -105,8 +153,17 @@ body {
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width:728px) {
+@media screen and (max-width:767px) {
 
+  .section-title {
+    padding-bottom: 1rem !important;
+  }
+
+  #cards, .dane-adresowe {
+    padding-top: 1rem;
+  }
+
+  
 
   #oferta, #galeria, #kontakt {
     margin-top: 0px;
@@ -114,6 +171,15 @@ body {
   }
 }
 
+.more-photos a {
+  text-decoration: none;
+  color: black;
+  transition-duration: .3s;
+}
+
+.more-photos a:hover {
+  color: #377ad0;
+}
 
 .bi, .kontakt {
   color: #ffffff;
@@ -363,9 +429,7 @@ body {
   }
 
 @media screen and (max-width: 767px) {
-  #cards {
-    margin-top: 10vh;
-  }
+
 }
 
 

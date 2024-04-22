@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.min.css';
 import '@popperjs/core';
-import '@symfony/stimulus-bundle';
-import '@hotwired/stimulus';
+//import '@symfony/stimulus-bundle';
+//import '@hotwired/stimulus';
 import './styles/app.css';
 
 import 'jquery';
@@ -12,6 +12,15 @@ import 'jquery';
 import $ from 'jquery';
 // things on "window" become global variables
 window.$ = $;
+
+import Aos from 'aos';
+import './styles/aos.css';
+Aos.init({
+  duration: 400,
+  easing: 'linear',
+  offset: 120,
+  once: false
+});
 
 //console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
 
@@ -66,8 +75,51 @@ function backToTop() {
 }
 
 const dropDownItem = document.querySelector('#lang-dropdown');
+//const backToHp = document.querySelector('#btn-back-to-hp');
+const logoButton = document.querySelector('#logo-button');
 
-dropDownItem.addEventListener('click', function () {
-  console.log('Udało się');
-  window.location.reload();
+dropDownItem.addEventListener('click', (event) => {
+  setTimeout(() => {
+    location.reload();
+  }, 500);
+});
+
+// if(backToHp) {
+//   backToHp.addEventListener('click', () => {
+//     setTimeout(() => {
+//       location.reload();
+//     }, 500);
+//   });
+// }
+
+if(logoButton) {
+  logoButton.addEventListener('click', () => {
+    document.body.style.visibility = 'hidden';
+    setTimeout(() => {
+      location.reload();
+    }, 100);
+  });
+}
+
+// preloader
+
+// document.body.style.visibility = 'hidden';
+// window.addEventListener('load', (event) => {
+
+//       document.querySelector('.loader-container').style.display = 'none';
+//       document.body.style.visibility = 'visible';
+//   }
+// );
+
+const preloader = document.querySelector('#preloader');
+
+document.body.style.visibility = 'hidden';
+preloader.classList.add('show-preloader');
+
+window.addEventListener('load', function () {
+  document.body.style.visibility = 'visible';
+  preloader.classList.remove('show-preloader');
+	// setTimeout(function(){
+  //   	preloader.classList.remove('show-preloader');
+	// }, 2000);
 });

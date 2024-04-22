@@ -42,4 +42,13 @@ return [
     'jquery' => [
         'version' => '3.7.1',
     ],
+    'aos' => [
+        'version' => '3.0.0-beta.6',
+    ],
+    'lodash.throttle' => [
+        'version' => '4.1.1',
+    ],
+    'lodash.debounce' => [
+        'version' => '4.0.8',
+    ],
 ];
