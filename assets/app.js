@@ -15,6 +15,33 @@ window.$ = $;
 
 import Aos from 'aos';
 import './styles/aos.css';
+
+
+// preloader
+
+// document.body.style.visibility = 'hidden';
+// window.addEventListener('load', (event) => {
+
+//       document.querySelector('.loader-container').style.display = 'none';
+//       document.body.style.visibility = 'visible';
+//   }
+// );
+
+const preloader = document.querySelector('#preloader');
+
+//document.body.style.visibility = 'hidden';
+//preloader.classList.add('show-preloader');
+
+window.addEventListener('load', function () {
+  //document.body.style.visibility = 'visible';
+  preloader.classList.remove('show-preloader');
+	// setTimeout(function(){
+  //   	preloader.classList.remove('show-preloader');
+	// }, 2000);
+});
+
+
+
 Aos.init({
   duration: 400,
   easing: 'linear',
@@ -94,32 +121,10 @@ dropDownItem.addEventListener('click', (event) => {
 
 if(logoButton) {
   logoButton.addEventListener('click', () => {
-    document.body.style.visibility = 'hidden';
+   
     setTimeout(() => {
       location.reload();
-    }, 100);
+    }, 500);
   });
 }
 
-// preloader
-
-// document.body.style.visibility = 'hidden';
-// window.addEventListener('load', (event) => {
-
-//       document.querySelector('.loader-container').style.display = 'none';
-//       document.body.style.visibility = 'visible';
-//   }
-// );
-
-const preloader = document.querySelector('#preloader');
-
-document.body.style.visibility = 'hidden';
-preloader.classList.add('show-preloader');
-
-window.addEventListener('load', function () {
-  document.body.style.visibility = 'visible';
-  preloader.classList.remove('show-preloader');
-	// setTimeout(function(){
-  //   	preloader.classList.remove('show-preloader');
-	// }, 2000);
-});
