@@ -22,87 +22,9 @@
             <div class="custom-loader"></div>
         </div>
         <!-- Preloader -->
-
     <body>
 
-    {# <button type="button" class="btn shadow z-3" id="btn-back-to-hp"  style="position:absolute;top:80px">
-    <a href="{{ path('app_homepage')}}"><i style="color: black !important;" class="bi bi-arrow-left h2"></i></a>
-    </button> #}
 
-    <button type="button" class="btn shadow z-3" id="btn-back-to-top">
-        <i style="color: black !important;" class="bi bi-arrow-up h2"></i>
-    </button>
-
-    <header>
-        <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-transparent p-0" style="height:68px">
-            <div class="nawigacja container-fluid d-flex flex-row p-0 shadow">
-            
-                    <div class="navbar-brand d-flex align-items-center z-1">
-                    <a id="logo-button" href="{{ path('app_homepage')}}" style="display: contents;">
-                    <img src="{{ asset ('images/logo_marzena.png')}}" width="60" height="60" alt="Logo" title="{{'Apartments'|trans}} Marzena" class="d-inline-block align-text-top ms-1 me-1">
-                        <span style="color:black">{{'Apartments'|trans}} Marzena</span>
-                    </a>
-                    </div>
-                    
-                    <div class="d-flex justify-content-end">
-                        <div id="nav-icon3" class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                
-                <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNav">
-                    <ul class="navbar-nav ms-auto flex-nowrap">
-                        {# <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="bi bi-house-door"></i></a>
-                        </li> #}
-                        <li id="start-up" class="nav-item">
-                            <a href="{{ path('app_homepage', {_locale:app.request.locale}) }}#top" title="{{'Home'|trans}}" class="nav-link">{{'Home'|trans}}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ path('app_homepage', {_locale:app.request.locale}) }}#oferta" target="_top" title="{{'Apartments'|trans}}" class="nav-link">{{'Apartments'|trans}}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ path('app_homepage', {_locale:app.request.locale}) }}#galeria" target="_top" title="{{'Gallery'|trans}}" class="nav-link">{{'Gallery'|trans}}</a>
-                        </li>
-                        {# <li class="nav-item">
-                            <a href="#cennik" title="Cennik" class="nav-link">Cennik</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#rejestracja" title="Rejestracja" class="nav-link">Rejestracja</a>
-                        </li> #}
-                        <li class="nav-item">
-                            <a href="{{ path('app_homepage', {_locale:app.request.locale}) }}#kontakt" target="_top" title="{{'Contact'|trans}}" class="nav-link">{{'Contact'|trans}}</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link-lang dropdown-toggle" href="" id="dropdown-language" role="button"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img width="20px" style="padding-bottom:3px" src="https://flagcdn.com/{{app.request.locale == 'en' ? 'gb' : app.request.locale}}.svg"></img>
-                                {{ app.request.locale|locale_name(app.request.locale)|u.title }}
-                            </a>
-                            <ul id="lang-dropdown" class="dropdown-menu border-0" aria-labelledby="dropdown-language">
-                                <li>
-                                    <a class="dropdown-item" href="{{ path('app_gallery', {_locale: 'en'}) }}">
-                                    <img width="20px" style="padding-bottom:3px" src="https://flagcdn.com/gb.svg"></img> English
-                                    </a>
-                                </li>
-                                <li><a class="dropdown-item" href="{{ path('app_gallery', {_locale: 'it'}) }}">
-                                    <img width="20px" style="padding-bottom:3px" src="https://flagcdn.com/it.svg"></img> Italiano
-                                    </a>
-                                </li>
-                                <li><a class="dropdown-item" href="{{ path('app_gallery', {_locale: 'pl'}) }}">
-                                    <img width="20px" style="padding-bottom:3px" src="https://flagcdn.com/pl.svg"></img> Polski
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
 
 
         {% block body %}{% endblock %}
