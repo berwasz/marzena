@@ -16,32 +16,6 @@ window.$ = $;
 import Aos from 'aos';
 import './styles/aos.css';
 
-
-// preloader
-
-// document.body.style.visibility = 'hidden';
-// window.addEventListener('load', (event) => {
-
-//       document.querySelector('.loader-container').style.display = 'none';
-//       document.body.style.visibility = 'visible';
-//   }
-// );
-
-const preloader = document.querySelector('#preloader');
-
-//document.body.style.visibility = 'hidden';
-//preloader.classList.add('show-preloader');
-
-window.addEventListener('load', function () {
-  //document.body.style.visibility = 'visible';
-  preloader.classList.remove('show-preloader');
-	// setTimeout(function(){
-  //   	preloader.classList.remove('show-preloader');
-	// }, 2000);
-});
-
-
-
 Aos.init({
   duration: 400,
   easing: 'linear',
@@ -57,23 +31,27 @@ const toggleButton = document.querySelector('#nav-icon3');
 const navBar = document.querySelector('#navbarNav');
 const navLinks = document.querySelectorAll('.nav-link');
 
+if(toggleButton) {
 toggleButton.addEventListener('click', function() {
     this.classList.toggle('open');
 });
+}
 
+if(navBar) {
 navLinks.forEach((navLink) => {
     navLink.addEventListener('click', () => {
         navBar.classList.remove('show');
         toggleButton.classList.remove('open');
     });
 });
+};
 
 /* button go to top */
 
 //Get the button
 const mybutton = document.querySelector('#btn-back-to-top');
 const logoHome = document.querySelector('.navbar-brand');
-const startUp = document.querySelector('#start-up');
+//const startUp = document.querySelector('#start-up');
 
 // When the user scrolls down 600px from the top of the document, show the button
 window.onscroll = function () {
@@ -92,7 +70,7 @@ function scrollFunction() {
 }
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener('click', backToTop);
-startUp.addEventListener('click', backToTop);
+//startUp.addEventListener('click', backToTop);
 logoHome.addEventListener('click', backToTop);
 
 function backToTop() {
@@ -102,22 +80,24 @@ function backToTop() {
 }
 
 const dropDownItem = document.querySelector('#lang-dropdown');
-//const backToHp = document.querySelector('#btn-back-to-hp');
+const backToHp = document.querySelector('#btn-back-to-hp');
 const logoButton = document.querySelector('#logo-button');
 
+if(dropDownItem) {
 dropDownItem.addEventListener('click', (event) => {
   setTimeout(() => {
     location.reload();
   }, 500);
 });
+}
 
-// if(backToHp) {
-//   backToHp.addEventListener('click', () => {
-//     setTimeout(() => {
-//       location.reload();
-//     }, 500);
-//   });
-// }
+if(backToHp) {
+  backToHp.addEventListener('click', () => {
+    setTimeout(() => {
+      location.reload();
+    }, 500);
+  });
+}
 
 if(logoButton) {
   logoButton.addEventListener('click', () => {
@@ -128,3 +108,16 @@ if(logoButton) {
   });
 }
 
+// preloader
+
+const preloader = document.querySelector('#preloader');
+
+//preloader.classList.remove('hide-preloader');
+
+document.onreadystatechange = () => {
+  if(document.readyState === 'complete')
+    preloader.classList.add('hide-preloader');
+  
+
+  
+};

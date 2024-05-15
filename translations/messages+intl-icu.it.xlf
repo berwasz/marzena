@@ -45,6 +45,10 @@
         <source>more photos</source>
         <target>più foto</target>
       </trans-unit>
+      <trans-unit id="PEgjRvN" resname="back">
+        <source>back</source>
+        <target>ritorno</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
