@@ -121,8 +121,8 @@
 
 html {
     font-size: 12px;
-    /* overflow-x: hidden; */
-    overflow: visible;
+    /* overflow-x: hidden;
+    overflow: visible; */
   }
 
 @media screen and (min-width: 300px) {
@@ -140,7 +140,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     background-color: #ffffff;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .nawigacja {
@@ -186,26 +186,7 @@ body {
 }
 
 
-#start {
-    position: relative;
-    background: linear-gradient(black,gray);
-}
 
-#start::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.6;
-    background-image: url('../images/pexels-pixabay-355863.jpg');
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 #kontakt {
   position: relative;
@@ -232,12 +213,13 @@ body {
   background-color: #ffffff;
 }
 
-#section3 {
-  position: relative;
+#start {
+  /* position: relative; */
   background: linear-gradient(black,gray);
+  min-height: 100vh;
 }
 
-#section3::before {
+#start::before {
   content: ' ';
   display: block;
   position: absolute;
@@ -246,11 +228,12 @@ body {
   bottom: 0px;
   left: 0px;
   opacity: 0.6;
-  background-image: url('../images/pexels-andrea-piacquadio-3778966.jpg');
+  background-image: url('../images/pexels-pixabay-355863.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 @media (min-width: 992px) {
@@ -289,7 +272,7 @@ body {
 
 .text {
     position: relative;
-    color: #ffffff;    
+    color: white;    
 }
 
 #btn-back-to-top {
