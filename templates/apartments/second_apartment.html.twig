@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'Apartment'|trans}} 1{% endblock %}
+
+{% block body %}
+    {# <button type="button" class="btn shadow z-3" id="btn-back-to-top">
+        <i style="color: black !important;" class="bi bi-arrow-up h2"></i>
+    </button> #}
+
+    {% include 'apartments/backbutton.html.twig' %}
+
+    {# <header>
+        <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-transparent p-0" style="height:68px">
+            <div class="nawigacja container-fluid d-flex flex-row p-0 shadow">
+            
+                    <div class="navbar-brand d-flex align-items-center z-1">
+                    <a id="logo-button" href="{{ path('app_homepage')}}" style="display: contents;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="black" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                    </svg>
+                        <span style="color:black">{{'back'|trans}}</span>
+                    </a>
+                    </div>
+
+            </div>
+        </nav>
+    </header> #}
+
+    <!-- Carousel -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <picture>
+            <source srcset="https://source.unsplash.com/random/2000x500/?italy" media="(min-width: 1400px)">
+            <source srcset="https://source.unsplash.com/random/1400x500/?italy" media="(min-width: 768px)">
+            <source srcset="https://source.unsplash.com/random/800x500/?italy" media="(min-width: 576px)">
+            <img srcset="https://source.unsplash.com/random/600x500/?italy" alt="responsive image" class="d-block img-fluid">
+        </picture>
+      {# <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div> #}
+    </div>
+    <div class="carousel-item">
+        <picture>
+            <source srcset="https://source.unsplash.com/random/2000x500/?italy" media="(min-width: 1400px)">
+            <source srcset="https://source.unsplash.com/random/1400x500/?italy" media="(min-width: 768px)">
+            <source srcset="https://source.unsplash.com/random/800x500/?italy" media="(min-width: 576px)">
+            <img srcset="https://source.unsplash.com/random/600x500/?italy" alt="responsive image" class="d-block img-fluid">
+        </picture>
+      {# <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div> #}
+    </div>
+    <div class="carousel-item">
+        <picture>
+            <source srcset="https://source.unsplash.com/random/2000x500/?italy" media="(min-width: 1400px)">
+            <source srcset="https://source.unsplash.com/random/1400x500/?italy" media="(min-width: 768px)">
+            <source srcset="https://source.unsplash.com/random/800x500/?italy" media="(min-width: 576px)">
+            <img srcset="https://source.unsplash.com/random/600x500/?italy" alt="responsive image" class="d-block img-fluid">
+        </picture>
+      {# <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div> #}
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Description -->
+
+    <div class="d-flex align-items-top justify-content-center min-vh-50 display-3 p-5 caveat-brush-regular">
+        {{'Apartment'|trans}} {{'Green'|trans}}
+    </div>
+
+    <div class="container col-md-8 clearfix pb-5">
+
+        <div class="text-center">  
+            <img src="https://source.unsplash.com/random/768x900/?italy" class="col-md-5 float-md-end m-md-3 mb-3 col-12" alt="...">
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec massa sapien faucibus et. Sit amet venenatis urna cursus. Consectetur adipiscing elit duis tristique sollicitudin nibh. Massa tempor nec feugiat nisl pretium. Nibh tellus molestie nunc non blandit massa enim nec dui. Senectus et netus et malesuada fames ac turpis. Ut placerat orci nulla pellentesque dignissim enim sit. Adipiscing elit ut aliquam purus sit amet. Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Sollicitudin aliquam ultrices sagittis orci a. Est placerat in egestas erat imperdiet sed euismod. Elementum eu facilisis sed odio morbi quis commodo. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Quam elementum pulvinar etiam non quam.</p>
+
+        <p>Risus nec feugiat in fermentum posuere urna nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Volutpat est velit egestas dui id ornare arcu. Dignissim sodales ut eu sem integer vitae justo eget. Integer vitae justo eget magna fermentum. Sodales ut eu sem integer vitae justo eget magna. At varius vel pharetra vel. Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Purus sit amet volutpat consequat mauris nunc. Placerat in egestas erat imperdiet. Felis bibendum ut tristique et egestas. Amet mattis vulputate enim nulla aliquet porttitor lacus. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Massa sapien faucibus et molestie ac.</p>
+
+        <p>Tristique nulla aliquet enim tortor at. Pulvinar elementum integer enim neque volutpat. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Aenean et tortor at risus viverra adipiscing at. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Felis eget velit aliquet sagittis. Sed augue lacus viverra vitae. Et malesuada fames ac turpis egestas. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus.</p>
+
+        <div class="text-center">  
+            <img src="https://source.unsplash.com/random/768x500/?italy" class="col-md-5 float-md-start m-md-3 mb-3 col-12" alt="...">
+        </div>
+
+        <p>Quam id leo in vitae turpis massa sed elementum tempus. At auctor urna nunc id cursus metus aliquam eleifend. Purus sit amet volutpat consequat mauris nunc. Quis eleifend quam adipiscing vitae proin sagittis. Tempor orci eu lobortis elementum nibh tellus molestie nunc non. Dictum varius duis at consectetur lorem donec massa sapien. Lectus nulla at volutpat diam ut venenatis tellus in metus. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Est lorem ipsum dolor sit amet consectetur adipiscing. Volutpat ac tincidunt vitae semper. Interdum posuere lorem ipsum dolor sit amet consectetur. Nunc id cursus metus aliquam eleifend mi in nulla. Scelerisque fermentum dui faucibus in ornare quam viverra orci. Convallis posuere morbi leo urna molestie. Sem integer vitae justo eget magna.</p>
+
+        <p>Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Nullam ac tortor vitae purus faucibus ornare suspendisse. Augue eget arcu dictum varius duis at consectetur. Sed elementum tempus egestas sed. Dolor morbi non arcu risus quis varius quam quisque. Diam sit amet nisl suscipit adipiscing bibendum. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Consequat semper viverra nam libero justo laoreet. Nec feugiat in fermentum posuere urna nec. Nam at lectus urna duis. Suspendisse potenti nullam ac tortor vitae. Nisi est sit amet facilisis magna. Convallis aenean et tortor at risus viverra adipiscing at in.</p>
+
+    </div>
+
+    <!-- Footer -->
+
+    {% include 'apartments/footer.html.twig' %}
+
+{% endblock %}

@@ -11,7 +11,7 @@
       </trans-unit>
       <trans-unit id="NYB6wbr" resname="Apartments">
         <source>Apartments</source>
-        <target>Appartamento</target>
+        <target>Appartamenti</target>
       </trans-unit>
       <trans-unit id="G4Vl0OH" resname="Marzena's new page">
         <source>Marzena's new page</source>
@@ -48,6 +48,22 @@
       <trans-unit id="PEgjRvN" resname="back">
         <source>back</source>
         <target>ritorno</target>
+      </trans-unit>
+      <trans-unit id="P8Ao.7s" resname="Apartment">
+        <source>Apartment</source>
+        <target>Appartamento</target>
+      </trans-unit>
+      <trans-unit id="7H1WoBY" resname="Blue">
+        <source>Blue</source>
+        <target>Blu</target>
+      </trans-unit>
+      <trans-unit id="nPD8kpl" resname="more info">
+        <source>more info</source>
+        <target>ulteriori info</target>
+      </trans-unit>
+      <trans-unit id="1IbfvV_" resname="Green">
+        <source>Green</source>
+        <target>Verde</target>
       </trans-unit>
     </body>
   </file>

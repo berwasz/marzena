@@ -49,6 +49,22 @@
         <source>back</source>
         <target>wróć</target>
       </trans-unit>
+      <trans-unit id="P8Ao.7s" resname="Apartment">
+        <source>Apartment</source>
+        <target>Apartament</target>
+      </trans-unit>
+      <trans-unit id="7H1WoBY" resname="Blue">
+        <source>Blue</source>
+        <target>Niebieski</target>
+      </trans-unit>
+      <trans-unit id="nPD8kpl" resname="more info">
+        <source>more info</source>
+        <target>więcej info</target>
+      </trans-unit>
+      <trans-unit id="1IbfvV_" resname="Green">
+        <source>Green</source>
+        <target>Zielony</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

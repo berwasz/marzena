@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.min.css';
 import '@popperjs/core';
-//import '@symfony/stimulus-bundle';
-//import '@hotwired/stimulus';
+import '@symfony/stimulus-bundle';
+import '@hotwired/stimulus';
 import './styles/app.css';
 
 import 'jquery';
@@ -15,6 +15,40 @@ window.$ = $;
 
 import Aos from 'aos';
 import './styles/aos.css';
+
+// preloader
+
+const preloader = document.querySelector('#preloader');
+
+//preloader.classList.add('show-preloader');
+
+
+window.addEventListener('DOMContentLoaded', function () {
+  preloader.classList.remove('show-preloader');
+});
+
+  // document.onreadystatechange = () => {
+  //   if(document.readyState === 'complete') {
+  //     console.log('preloader');
+  //     preloader.classList.remove('show-preloader');
+  //   }
+  // };
+
+// document.querySelector('#lineker').addEventListener('click', function () {
+//     console.log('lineker');
+//     setTimeout(() => {
+//       preloader.classList.remove('show-preloader');
+//       console.log('timeout');
+//     }, 3000);
+// })
+
+
+// if(preloader) {
+//     setTimeout(() => {
+//       preloader.classList.add('hide-preloader');
+//     }, 1000);
+// };
+
 
 Aos.init({
   duration: 400,
@@ -54,9 +88,12 @@ const logoHome = document.querySelector('.navbar-brand');
 //const startUp = document.querySelector('#start-up');
 
 // When the user scrolls down 600px from the top of the document, show the button
+if(mybutton) {
 window.onscroll = function () {
   scrollFunction();
 };
+}
+
 
 function scrollFunction() {
   if (
@@ -68,10 +105,12 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
+
 // When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener('click', backToTop);
+if(mybutton) mybutton.addEventListener('click', backToTop);
 //startUp.addEventListener('click', backToTop);
-logoHome.addEventListener('click', backToTop);
+if(logoHome) logoHome.addEventListener('click', backToTop);
 
 function backToTop() {
   document.body.scrollTop = 0;
@@ -108,16 +147,7 @@ if(logoButton) {
   });
 }
 
-// preloader
+document.getElementById("btn-bthp").addEventListener("click", () => {
+  history.back();
+});
 
-const preloader = document.querySelector('#preloader');
-
-//preloader.classList.remove('hide-preloader');
-
-document.onreadystatechange = () => {
-  if(document.readyState === 'complete')
-    preloader.classList.add('hide-preloader');
-  
-
-  
-};

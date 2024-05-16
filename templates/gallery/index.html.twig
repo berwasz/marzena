@@ -12,7 +12,9 @@
         <i style="color: black !important;" class="bi bi-arrow-up h2"></i>
     </button>
 
-    <header>
+    {% include 'apartments/backbutton.html.twig' %}
+
+    {# <header>
         <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-transparent p-0" style="height:68px">
             <div class="nawigacja container-fluid d-flex flex-row p-0 shadow">
             
@@ -30,7 +32,7 @@
 
             </div>
         </nav>
-    </header>
+    </header> #}
 
             <div id="galeria" class="container-fluid d-flex flex-column align-items-center">
                 <h2 data-aos="zoom-in" class="section-title caveat-brush-regular text-center display-2 pb-5">{{'Gallery'|trans}}</h2>    
@@ -123,5 +125,7 @@
                     </div>
                 </div>
             </div>
+
+            {% include 'apartments/footer.html.twig' %}
 
 {% endblock %}
