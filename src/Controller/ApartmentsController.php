@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ApartmentsController extends AbstractController
 {
-    #[Route('/{_locale<%app.supported_locales%>}/apartments/1', name: 'app_apartments_first')]
+    #[Route('/{_locale<%app.supported_locales%>}/apartments/blue', name: 'app_apartments_first')]
     public function firstApartment(): Response
     {
         return $this->render('apartments/first_apartment.html.twig', [
@@ -16,7 +16,7 @@ class ApartmentsController extends AbstractController
         ]);
     }
 
-    #[Route('/{_locale<%app.supported_locales%>}/apartments/2', name: 'app_apartments_second')]
+    #[Route('/{_locale<%app.supported_locales%>}/apartments/green', name: 'app_apartments_second')]
     public function secondApartment(): Response
     {
         return $this->render('apartments/second_apartment.html.twig', [
