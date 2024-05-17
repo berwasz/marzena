@@ -65,6 +65,14 @@
         <source>Green</source>
         <target>Green</target>
       </trans-unit>
+      <trans-unit id="46QGZO4" resname="Zena Apartments">
+        <source>Zena Apartments</source>
+        <target>Zena Apartments</target>
+      </trans-unit>
+      <trans-unit id="Wpz2csi" resname="Italy">
+        <source>Italy</source>
+        <target>Italy</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -65,6 +65,14 @@
         <source>Green</source>
         <target>Zielony</target>
       </trans-unit>
+      <trans-unit id="46QGZO4" resname="Zena Apartments">
+        <source>Zena Apartments</source>
+        <target>Apartamenty Zena</target>
+      </trans-unit>
+      <trans-unit id="Wpz2csi" resname="Italy">
+        <source>Italy</source>
+        <target>Włochy</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
