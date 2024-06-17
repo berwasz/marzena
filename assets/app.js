@@ -54,7 +54,7 @@ Aos.init({
   duration: 400,
   easing: 'linear',
   offset: 120,
-  once: false
+  once: true
 });
 
 //console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
@@ -147,7 +147,11 @@ if(logoButton) {
   });
 }
 
-document.getElementById("btn-bthp").addEventListener("click", () => {
-  history.back();
-});
+const historyBack = document.querySelector('#btn-bthp');
+
+if(historyBack) {
+  document.getElementById("btn-bthp").addEventListener("click", () => {
+    history.back();
+  });
+}
 
