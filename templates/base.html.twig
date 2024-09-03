@@ -1,34 +1,70 @@
 <!DOCTYPE html>
-<html lang="en-EN">
+<html lang="pl-PL">
     <head>
-        <title>{% block title %}{{'Apartments'|trans}} Marzena{% endblock %}</title>
-        <meta http-equiv="Content-type" content="charset=utf-8" />
+        <title>{% block title %}Joga i pilates Marki{% endblock %}</title>
+        <link rel="icon" href="{{ asset ('img/favicon.ico')}}">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-        <link rel="icon" href="{{ asset ('images/logo_marzena.png')}}">
+        <meta name="description" content="Joga i pilates Marki - praktyka jogi (vinyasa, hatha) i ćwiczenia pilates dla dorosłych. Dla początkujących i średnio zaawansowanych." />
+        <meta name="keywords" content="joga marki, marki joga, pilates marki, marki pilates, joga, pilates, Marki, szkoła, zajęcia, zajęcia jogi, joga zajęcia, zajęcia jogi Marki, ćwiczenia, ciało, vinyasa, hatha" />
+        <meta name="robots" content="all,index" />
+        <link rel="canonical" href="https://jogawmarkach.pl/" />
+        <meta property="og:locale" content="pl_PL" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Joga i pilates Marki | JogawMarkach.pl" />
+        <meta property="og:description" content="Pilates i joga w Markach - praktyka jogi (vinyasa, hatha) i ćwiczenia pilates dla dorosłych. Dla początkujących i średnio zaawansowanych." />
+        <meta property="og:url" content="https://jogawmarkach.pl/" />
+        <meta property="og:site_name" content="Joga w Markach" />
+        <meta property="og:image" content="{{ asset ('img/Kasia_logo_ok_1200x628_new2.png')}}" />
+        <meta property="og:image:secure_url" content="{{ asset ('img/Kasia_logo_ok_1200x628_new2.png')}}" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="628" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Logo JogawMarkach.pl | Joga i Pilates" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                
+        {% include 'TagGoogleHead.html.twig' %}
 
         {% block stylesheets %}
+            
         {% endblock %}
 
         {% block javascripts %}
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
-
     </head>
-
-    <!-- Preloader -->
-        <div id="preloader" class="preloader show-preloader">
-            <div class="custom-loader"></div>
-        </div>
-        <!-- Preloader -->
-
     <body>
 
+        {% include 'TagGoogleBody.html.twig' %}
+
+        <!-- Preloader -->
+        {# <div class="loader-container">
+            <div class="custom-loader"></div>
+        </div> #}
+        <!-- Preloader -->
+
+            {% block body %}{% endblock %}
         
+        <!-- Copyright -->
+        <div id="stopka" class="footer d-flex justify-content-around align-items-center">
+            <span>© 2023-<span id="rok"></span> Copyrights, projekt i wykonanie: BenMedia Bernard Waszczyk</span>
+            <span><a href={{ path('app_jogawmarkach_regulamin') }}>Regulamin</a> | <a href={{ path('app_jogawmarkach_polityka_prywatnosci') }}>Polityka prywatności</a></span>
+        </div>
+        <!-- Copyright -->
 
+        <!-- Fitssey base code -->
+        <script>
+        (function(i,s,o,g,r,a,m){i['FitsseyWidget']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,
+        'script',
+        'https://app.fitssey.com/assets/js/lb.widget.prod.js',
+        'lb');
+        lb('init','jogawmarkach');
+        </script>
+        <!-- end of Fitssey base code -->
 
-        {% block body %}{% endblock %}
-    
     </body>
-
 </html>

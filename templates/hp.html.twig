@@ -1,0 +1,540 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} | JogawMarkach.pl{% endblock %}
+
+
+{% block body %}
+
+<!-- Modal - zmiana siedziby-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+      <div class="modal-header d-block text-center">
+        <h2 class="modal-title" id="exampleModalLabel">📢WAŻNE OGŁOSZENIE📢</h2>
+        {# <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> #}
+      </div>
+      <div class="modal-body text-center">
+        <p>Trwa wakacyjna przerwa! 🌴</p>
+        <p>Zapraszamy na zajęcia od 15 września do nowej siedziby na Legionowej 1B.</p>
+        <p>(to tylko 3 minuty autem, 5 rowerem lub 20 piechotą 😉)</p>
+        <img src="{{ asset ('images/pastelowa_legionowa.webp')}}" width="80%" alt="Mapa dojazdu na Legionową" title="Pastelowa-Legionowa" class="mapa-dojazdu pb-2">
+        <p>Do zobaczenia na macie 🧘‍♀️, Kasia</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+        {# <a href="https://www.facebook.com/events/1514005132505232/" target="_blank"><button type="button" class="btn btn-primary">Weź udział w wydarzeniu</button></a> #}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+ <div class="container-fluid d-flex flex-column p-0">
+    <h1 style="display:none">Marki — praktyka jogi i ćwiczenia pilates dla dorosłych</h1>
+
+    <button type="button" class="btn shadow z-3" id="btn-back-to-top">
+        <i style="color: #fef9f3 !important;" class="bi bi-arrow-up h2"></i>
+    </button>
+
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg bg-light p-0 shadow" style="padding: 10px 0 10px 0 !important; min-height: 68px; background-color: #fef9f3 !important;">
+                <div id="belka" class="container-fluid d-flex flex-row flex-nowrap">
+                
+                        <div class="navbar-brand d-flex align-items-center">
+                        <img src="{{ asset ('images/LOGO_JogawMarkach_profilowe_fb_bez_tla.webp')}}" width="60" height="60" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1">
+                        <img src="{{ asset ('images/LOGO_Baner_JogawMarkach_60.webp')}}" style="width:80%; height:auto" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1">
+                            {# JogawMarkach.pl | Joga i Pilates #}
+                        </div>
+                        
+                        <div class="d-flex justify-content-end pe-1">
+                            <div id="nav-icon3" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+                <div class="collapse navbar-collapse flex-grow-1 text-center pe-3" id="navbarNav">
+                        <ul class="navbar-nav ms-auto flex-nowrap">
+                            {# <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="bi bi-house-door"></i></a>
+                            </li> #}
+                            <li class="nav-item">
+                                <a href="#onas" title="O nas" class="nav-link">O nas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#oferta" title="Oferta" class="nav-link">Oferta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#grafik" title="Grafik i cennik" class="nav-link">Grafik i cennik</a>
+                            </li>
+                            {# <li class="nav-item">
+                                <a href="#cennik" title="Cennik" class="nav-link">Cennik</a>
+                            </li> #}
+                            <li class="nav-item">
+                                <a href="#kontakt" title="Kontakt" class="nav-link">Kontakt</a>
+                            </li>
+                            {# <li class="nav-item">
+                                <a class="nav-link fitssey">
+                                    <!-- Fitssey Auth Widget -->
+                                    <lb-auth-widget
+                                        auth-callback="fit();"
+                                        signup-label="Rejestracja"
+                                        login-label="Zaloguj"
+                                    ></lb-auth-widget>
+                                    <!-- end of Fitssey Auth Widget -->
+                                </a>
+                            </li> #}
+
+
+                        </ul>
+                </div>
+            </nav>
+            
+            <div id="intro" class="bg-image shadow" title="Kasia Latek, instruktorka pilatesu i jogi"></div>
+        </header>
+
+    <div id="main" style="margin-top: 68px;">
+        <div class="container">
+            <!--Section: O mnie-->
+            <section>
+                    <div id="onas" class="row">
+                        <div data-aos="fade-up" class="col-md-6 gx-5 mb-4">
+                            <div class="bg-image">
+                                <picture>
+                                    <source media="(max-width:991px)" srcset="{{ asset('images/omnie.webp') }}">
+                                    <source media="(min-width:992px)" srcset="{{ asset('images/omnie_large.webp') }}">
+                                    <img src="{{ asset ('images/omnie.webp')}}" width="600" height="600" alt="Uśmiechnięta kobieta o blond włosach" title="Kasia Latek, instruktorka pilatesu i jogi" class="img-fluid shadow rounded-3"/>
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" class="col-md-6 gx-5 mb-4">
+                            <h2 data-aos="fade-up"><strong>O nas</strong></h2>
+                            <p data-aos="fade-up" class="lead">
+                            Studio JogawMarkach założyła Katarzyna Latek, instruktorka pilatesu na macie i nauczycielka jogi (RYT 200 vinyasa yoga), którą praktykuje od ponad 20 lat. <i id="ikonaKwalifikacje" class="bi bi-info-circle-fill" title="Lista kursów i szkoleń" data-bs-toggle="modal" data-bs-target="#kwalifikacje"></i>
+                            </p>
+                            <p data-aos="fade-up" class="lead">
+                            Misją studia jest zapewnienie uczestnikom zajęć dobrego samopoczucia i sprawienie, by czuli się komfortowo w swoich ciałach i blisko samych siebie.
+                            </p>
+                            <p data-aos="fade-up" class="lead">
+                            Wierzymy, że regularna praktyka jogi i pilatesu nie tylko wzmacnia ciało, ale także uspokaja umysł i odżywia duszę.
+                            </p>
+                            <p data-aos="fade-up" class="lead">
+                            Dołącz do nas i odkryj, jak poprzez ruch i oddech możesz osiągnąć wewnętrzną równowagę i siłę.
+                            </p>
+                            <p data-aos="fade-up" class="lead">
+                            Niezależnie od tego, czy jesteś początkującym, czy zaawansowanym praktykiem, znajdziesz u nas zajęcia dostosowane do Twoich potrzeb i możliwości.
+                            </p>
+
+                            <div class="modal fade" id="kwalifikacje" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content border-0 shadow">
+                                    <div class="modal-header">
+                                        <p class="modal-title fs-5" id="staticBackdropLabel">Kursy i szkolenia</p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Nauczycielka jogi RYT200 Yoga Alliance (200-hour yoga teacher training, vinyasa yoga)</li>
+                                            <li>Instruktor sportu ze specjalizacją pilates (Polska Akademia Sportu)</li>
+                                            <li>Szkolenie stretching (Akademia Zdrofit)</li>
+                                            <li>Kurs Pilates Core</li>
+                                            <li>Szkolenie Zdrowy kręgosłup (Akademia Zdrofit)</li>
+                                            <li>Kurs nauczycielski Joga powięziowa (Yoga Alliance Continuing Education Provider - YACEP)</li>
+                                            <li>Kurs Joga w menopauzie (YACEP)</li>
+                                            <li>Szkolenie Joga dla Seniora (YACEP)</li>
+                                            <li>Kurs nauczycielski Restorative Yoga (YACEP)</li>
+                                            <li>Kurs Vinyasa Krama (YACEP)</li>
+                                            <li>Kurs nauczycielski Medytacja krok po kroku (YACEP)</li>
+                                            <li>Kurs Joga nidra — sztuka relaksacji (YACEP)</li>
+                                        </ul>
+                                    </div>
+                                    {# <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Understood</button>
+                                    </div> #}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                <div id="miejsce" class="row justify-content-around">
+                    <div data-aos="fade-up" class="col-md-6 gx-5 mt-4">
+                        <h2><strong>Miejsce</strong></h2>
+                        <p class="lead">
+                        Ćwiczymy w nowym studiu na ul. Legionowej 1B w Markach (nad apteką).
+                        </p>
+                        <p data-aos="zoom-out" data-aos-offset="80" data-aos-delay="100" class="m-1 text-center">
+                            <a id="maps-gora" class="p-2 text-body-secondary" href="https://maps.app.goo.gl/8e43LpAi1LE6PQqb9" target="_blank" title="google maps">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </a>
+                        </p>
+                        <p class="lead">
+                        Możesz mieć własną matę, ale mamy je także na miejscu. Podobnie jak klocki, wałki i bolstery.
+                        </p>
+                    </div>
+                    <div data-aos="fade-up" class="col-md-4 gx-5 mt-4">
+
+                        <div id="pastelowaCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner shadow rounded-3 mt-4">
+                                <div class="carousel-item active">
+                                    <img src="{{ asset ('images/sala_nowa_1_375x500.webp')}}" class="w-100" alt="Sala do ćwiczenia jogi | JogawMarkach.pl" title="Sala, w której odbywają sie zajęcia pilates i joga"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset ('images/sala_nowa_2_375x500.webp')}}" class="w-100" alt="Regał z przyrządami do ćwiczenia jogi | JogawMarkach.pl" title="Przyrządy do ćwiczeń"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset ('images/winder_375x500.webp')}}" class="w-100" alt="JogawMarkach.pl" title="JogawMarkach.pl"/>
+                                </div>
+                            </div>
+                        </div>
+
+                      {# <img src="img/pastelowy_gaj_1600X1000.webp" class="img-fluid shadow rounded-3" /> #}
+
+                    </div>
+                </div>
+              </section>
+            <!--Section: O mnie-->
+
+      <hr/>
+
+      <!--Section: Oferta-->
+      <section id="oferta">
+        <h2 data-aos="fade-up" data-aos-offset="200" class="display-2 mb-5 text-center"><strong>Oferta</strong></h2>
+
+        <div class="row justify-content-around">
+
+
+
+        
+            <div data-aos="fade-up" class="col-lg-12 col-md-12 mb-4">
+                <div class="card shadow border-0 h-100" style="border-radius: 10px;">
+                <div class="bg-image">
+                        <picture>
+                            <source media="(max-width:991px)" srcset="{{ asset('images/joga_poziom_2.webp') }}">
+                            <source media="(min-width:992px)" srcset="{{ asset('images/joga_poziom.webp') }}">
+                            <img style="border-radius: 10px 10px 0 0;" src="{{ asset ('images/joga_poziom.webp')}}" width="100%" class="img-fluid" alt="Kobieta ćwicząca jogę" title="Joga"/>
+                        </picture>
+                </div>
+                <div class="card-body text-start">
+                    <h3 data-aos="fade-up">Joga</h3>
+                    <div>
+                        <p data-aos="fade-up" class="lead">
+                        Joga nie jest jedynie zestawem ćwiczeń fizycznych, ale również filozofią życiową. Opiera się na przekonaniu, 
+                        że ciało, umysł i dusza są ze sobą powiązane.
+                        </p>
+                        <p data-aos="fade-up" class="lead">
+                        Niezależnie od tego, z jaką intencją rozpoczynasz praktykę jogi, odnajdziesz w niej coś dla siebie. 
+                        Sprawniejsze ciało, lepszy z nim kontakt, więcej spokoju, głębszy oddech, poczucie, że jesteś tu i teraz - to tylko początek długiej listy korzyści.
+                        </p>
+                        <p data-aos="fade-up" class="lead">
+                        Na macie spotykamy się niezależnie od poziomu zaawansowania. W praktyce korzystam z dziedzictwa klasycznej hatha jogi i jogi vinyasy, 
+                        wykorzystuję elementy jogi dla kręgosłupa, pracy z powięzią, restorative yoga (jogi regenerującej). 
+                        Praktyka zawiera też elementy pracy z oddechem i kończy się głębokim relaksem.
+                        </p>
+                        <hr>
+                        <h3 data-aos="fade-up">Nasze zajęcia</h3>
+                        <p data-aos="fade-up" class="lead">
+                        <span class="zajecia">Joga dla początkujących</span> to oparte na klasycznej hatha jodze zajęcia, na których praktykujemy podstawowe asany i uczymy się pracy z oddechem.
+                        Wykorzystujemy pomoce - kostki, paski, wałki i koce. Każda praktyka zaczyna się chwilą uważności i kończy relaksacją. 
+                        Do grupy można dołączyć w każdym momencie, bez względu na kondycję czy poziom sprawności.
+                        Korzyści płynące z jogi to m.in. poprawa sprawności, elastyczniejsze ciało, lepsza koncentracja, redukcja stresu.
+                        </p>
+                        <p data-aos="fade-up" class="lead">
+                        <span class="zajecia">Joga open</span> - nasze nauczycielki w praktyce łączą klasyczną hatha jogę z płynnością jogi vinyasy.
+                        Skupiają się na budowaniu solidnych fundamentów praktyki, takich jak prawidłowe ustawienie ciała w asanach,
+                        płynne przejścia między pozycjami oraz świadomy oddech. Praktyka obejmuje także medytację i relaksację.
+                        Podczas wykonywania asan proponowane są różne ich warianty lub zamienniki, by praktykować mogły osoby na każdym poziomie zaawansowania.
+                        Korzyści płynące z jogi to m.in. poprawa sprawności, elastyczniejsze ciało, lepsza koncentracja, redukcja stresu.
+                        </p>
+                        <p data-aos="fade-up" class="lead">
+                        <span class="zajecia">Joga dla kręgosłupa</span> to specjalnie dobrane sekwencje asan (pozycji), które mają na celu wzmocnienie mięśni głębokich stabilizujących kręgosłup,
+                        poprawę jego elastyczności i zmniejszenie napięcia. Ćwiczenia są dostosowane do potrzeb osób z problemami kręgosłupa, a także tych, którzy chcą zapobiec ich wystąpieniu.
+                        Polecane są także osobom spędzającym dużo czasu w pozycji siedzącej.
+                        </p>
+                    </div>
+                    {# <a href="#!" class="btn btn-primary">Button</a> #}
+                </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-lright" class="col-lg-6 col-md-12 mb-4">
+                <div class="card shadow border-0 h-100" style="border-radius: 10px;">
+                    <div class="bg-image">
+                    {# <img src="img/pexels-andrea-piacquadio-868483_1600x1000.webp" class="img-fluid" style="border-radius: 10px 10px 0 0;"/> #}
+                    <img style="border-radius: 10px 10px 0 0;" src="{{ asset ('images/pilates.webp')}}" width="800" height="500" class="img-fluid" alt="Kobieta ćwicząca pilates" title="Pilates"/>
+                    
+                    </div>
+                    <div class="card-body text-start">
+                    <h3 data-aos="fade-up">Pilates</h3>
+                    <div >
+
+                        <p data-aos="fade-up" class="lead">
+                        Większość ćwiczeń w pilatesie opiera się na ciężarze własnego ciała i zakłada wzmocnienie mięśni core, czyli całego centrum ciała - brzucha, pleców, mięśni głębokich. A to poprawia postawę i wzmacnia kręgosłup, o korzyściach dla sylwetki nie wspominając. Pilates poprawia też gibkość, elastyczność i mobilność.
+                        </p>
+
+                    </div>
+                    {# <a href="#!" class="btn btn-primary">Button</a> #}
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-lft" class="col-lg-6 col-md-12 mb-4">
+                <div class="card shadow border-0 h-100" style="border-radius: 10px;">
+                <div class="bg-image">
+                    {# <img src="img/pexels-andrea-piacquadio-868483_1600x1000.webp" class="img-fluid" style="border-radius: 10px 10px 0 0;"/> #}
+                    <img style="border-radius: 10px 10px 0 0;" src="{{ asset ('images/zdrowy_kregoslup.webp')}}" width="800" height="500" class="img-fluid" alt="Mężczyzna ćwiczący na trawie" title="Zdrowy kręgosłup"/>
+                    
+                </div>
+                <div class="card-body text-start">
+                    <h3 data-aos="fade-up">Zdrowy kręgosłup</h3>
+                    <div>
+                        <p data-aos="fade-up" class="lead">
+                        Zajęcia dla każdego, oparte na elementach jogi, pilatesu, stretchingu, mobility i na ćwiczeniach rehabilitacyjnych. Skierowane są do osób, które chcą zadbać o zdrowie, zredukować bóle pleców, zachować sprawność i poprawić ogólną kondycję fizyczną oraz samopoczucie.
+                        </p>
+                    </div>
+                    {# <a href="#!" class="btn btn-primary">Button</a> #}
+                </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!--Section: Oferta-->
+
+      <hr/>
+
+      <!--Section: Grafik-->
+      <section id="grafik">
+        <h2 data-aos="fade-up" class="display-2 mb-5 text-center"><strong>Grafik i cennik</strong></h2>
+        <div class="container col-md-8">
+            <p data-aos="fade-up">Zachęcamy do założenia konta na platformie Fitssey, przez kórą można zapisywać się na zajęcia (zakładka GRAFIK), a już niedługo będzie też można zakupić karnety online (zakładka CENNIK).</p>
+            <p data-aos="fade-up">Wymaga to rejestracji, ale proces jest bardzo prosty.<br>
+            Można to zrobić w oknie poniżej lub bezpośrednio na dedykowanej stronie <a style="text-decoration: none;" href="https://app.fitssey.com/jogawmarkach/frontoffice/login">Fitssey</a>.</p>
+            <p data-aos="fade-up">Można też korzystać z aplikacji mobilnej Fitssey:</p>
+                <div data-aos="fade-up" class="text-center mb-3">
+                    <a href="https://play.google.com/store/apps/details?id=com.fitssey&pli=1" target="_blank"><img class="m-2 google-play" src="{{ asset('images/google_play.webp') }}" alt="Logo Google Play"></a>
+                    <a href="https://apps.apple.com/pl/app/fitssey/id1438775177?l=pl" target="_blank"><img class="m-2 app-store" src="{{ asset('images/appstore.webp') }}" alt="Logo App Store"></a>
+                </div>
+            <p data-aos="fade-up">Płatności przyjmujemy na razie tylko miejscu - gotówką, kartą lub Blikiem.</p>
+            <p data-aos="fade-up">Na życzenie wystawiamy faktury VAT, jednak trzeba to zgłosić niezwłocznie po dokonaniu transakcji albo lepiej wcześniej!</p>
+            <p data-aos="fade-up">Linki do Regulaminu i Polityki prywatności znajdziesz na samym dole strony.</p>
+        </div>
+        <hr>
+        <div data-aos="fade-up" class="min-vh-100">
+        <!-- Fitssey Schedule Widget -->
+        <lb-schedule-widget></lb-schedule-widget>
+        <!-- end of Fitssey Schedule Widget -->
+        </div>
+        {# <h2 data-aos="fade-right" class="display-2 mb-5 text-center"><strong>Grafik</strong></h2>
+        <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
+            <div class="col-12 pb-5">
+                <div data-aos="fade-left" id="calendar" class="container-fluid mw-100"></div>
+            </div>
+        </div> #}
+      </section>
+    
+        <!--Section: Grafik-->
+
+      {# <hr/> #}
+
+    <!--Section: Cennik-->
+    {# <section id="cennik">
+        <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
+            <h2 data-aos="fade-left" class="display-2 mb-5 text-center"><strong>Cennik</strong></h2>
+            <div data-aos="fade-right" class="container col-md-6">
+                <h3 class="text-center">W PRZYGOTOWANIU</h3>
+
+                <table class="table">
+                    <thead>
+                        <tr class="">
+                            <th class="table-color" scope="col">Usługa</th>
+                            <th class="table-color text-center" scope="col">Cena</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th class="table-color" scope="row">Joga/pilates — wejście jednorazowe</th>
+                            <td class="table-color text-center">35&nbspzł</td>
+                        </tr>
+                        <tr>
+                            <th class="table-color" scope="row">PROMOCYJNY Joga/pilates - 4&nbspwejścia / 45&nbspdni</th>
+                            <td class="table-color text-center">120&nbspzł</td>
+                        </tr>
+                        <tr>
+                            <th class="table-color" scope="row">PROMOCYJNY Joga/pilates - 8&nbspwejść / 45&nbspdni</th>
+                            <td class="table-color text-center">200&nbspzł</td>
+                        </tr>
+                        <tr>
+                            <th class="table-color" scope="row">PROMOCYJNY Pilates - 4&nbspwejścia / 60&nbspdni</th>
+                            <td class="table-color text-center">120&nbspzł</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-color col-lg p-2">UWAGA!!! Rozliczamy się na miejscu i tylko gotówką lub blikiem na numer telefonu.</div>
+            </div>
+        </div>
+    </section> #}
+    </div>
+    <!--Section: Cennik-->
+
+      {# <hr/> #}
+    <!--Section: Rejestracja-->
+    {# <section>
+        <div id="rejestracja" class="container-fluid carousel slide" data-bs-touch="true" data-bs-wrap="false">
+
+                    <div class="carousel-inner h-100">
+
+                        <div class="carousel-item active">
+                            <div id="rejestracja1" class="slajd container d-flex flex-column align-items-center justify-content-center col-9">
+                                <h2 data-aos="fade-up" data-aos-offset="240" class="display-2 mb-5 text-center"><strong>Rejestracja</strong></h2>
+                                <div data-aos="fade-up" data-aos-offset="200" class="row align-items-center">
+
+                                    <div class="col-lg-6 d-inline lead">
+                                        <div class="text-center p-4"><img class="efitness-logo rounded-3" style="aspect-ratio: 1/1"
+                                                                    src="{{ asset('img/efitnessapp_logo.webp') }}" alt="Logo eFitness App"/></div>
+                                        <p>Do rejestracji w klubie oraz rezerwacji miejsc na poszczególne zajęcia polecamy w
+                                            pełni darmową aplikację eFitness App.</p>
+                                    </div>
+
+                                    <div class="col d-flex align-items-center justify-content-center flex-wrap">
+
+                                        <div class="d-flex flex-column">
+                                            <a href="https://play.google.com/store/apps/details?id=pl.efitness.mobile&hl=pl" target="_blank"><img class="m-2 google-play" src="{{ asset('img/google_play.webp') }}" width="180" height="51" alt="Logo Google Play"></a>
+                                            <a href="https://itunes.apple.com/pl/app/efitnessapp/id1054978020?l=pl&mt=8" target="_blank"><img class="m-2 app-store" src="{{ asset('img/appstore.webp') }}" width="180" height="51" alt="Logo App Store"></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div id="rejestracja2" class="slajd container d-flex flex-column align-items-center justify-content-center col-10">
+
+                                <h2 data-aos="fade-up" data-aos-offset="240" class="display-2 mb-5 text-center"><strong>eFitness App to:</strong></h2>
+
+                                <div data-aos="fade-up" data-aos-offset="200" class="row align-items-start">
+                                    <div class="col-lg pb-3">
+                                        <div class="text-center"><i class="bi bi-calendar3-week h2"></i></div>
+                                        <div class="p-2 lead">Łatwy dostęp do grafiku zajęć na każdy dzień.</div>
+                                    </div>
+                                    <div class="col-lg pb-3">
+                                        <div class="text-center"><i class="bi bi-calendar-check h2"></i></div>
+                                        <div class="p-2 lead">Szybki zapis na zajęcia, w zaledwie dwóch kliknięciach.</div>
+                                    </div>
+                                    <div class="col-lg pb-3">
+                                        <div class="text-center"><i class="bi bi-x-square h2"></i></div>
+                                        <div class="p-2 lead">Odwoływanie rezerwacji miejsca na zajęciach.</div>
+                                    </div>
+                                    <div class="col-lg pb-3">
+                                        <div class="text-center"><i class="bi bi-arrow-left-right h2"></i></div>
+                                        <div class="p-2 lead">Informacje o listach rezerwowych i zastępstwach.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div id="rejestracja3" class="slajd container d-flex flex-column align-items-center justify-content-center col-10">
+
+                                <h2 data-aos="fade-up" data-aos-offset="240" class="display-2 mb-5 text-center"><strong>Instalacja apki</strong></h2>
+
+                                <div data-aos="fade-up" data-aos-offset="200" class="row align-items-start">
+                                    <div class="col-lg pb-3">
+                                        <div class="text-center"><i class="bi bi-fingerprint h2"></i></div>
+                                        <div class="p-2 lead">Przy pierwszym uruchomieniu aplikacji trzeba potwierdzić tożsamość, korzystając z konta Google lub Apple ID.</div>
+                                    </div>
+                                    <div class="col-lg pb-3">
+                                        <div class="text-center"><i class="bi bi-door-open h2"></i></div>
+                                        <div class="p-2 lead">Następnie z listy klubów wybieramy <span class="fw-bold">JogawMarkach.pl</span>. Klikamy Wejdź do klubu i rejestrujemy się.</div>
+                                    </div>
+                                    <div class="col-lg pb-3">
+                                        <div class="text-center"><i class="bi bi-calendar3 h2"></i></div>
+                                        <div class="p-2 lead">Żeby zapisać się na zajęcia w dolnym menu wybieramy <span class="fw-bold">Grafik</span>. Obsługa karnetów dostępna jest w zakładce <span class="fw-bold">Profil</span>.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#rejestracja" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#rejestracja" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#rejestracja" data-bs-slide-to="0" class="indi-btn indicator active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#rejestracja" data-bs-slide-to="1" aria-label="Slide 2" class="indi-btn"></button>
+                        <button type="button" data-bs-target="#rejestracja" data-bs-slide-to="2" aria-label="Slide 3" class="indi-btn"></button>
+                    </div>
+
+        </div>
+        
+    </section> #}
+    </div>
+    <div class="modal fade" id="numerTelefonu" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabelTel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow border-0">
+                <div class="modal-header border-0">
+                    <p class="modal-title fs-5" id="staticBackdropLabelTel">+48 603 250 073</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-header">
+                    <p class="modal-title fs-5" id="">Telefon odbierze Bernard</p>
+                </div>
+                {# <div class="modal-body">
+                </div> #}
+                {# <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                </div> #}
+            </div>
+        </div>
+    </div>
+    
+    <footer data-aos="zoom-in" data-aos-offset="200" id="kontakt"
+        class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 min-vw-100">
+        
+        <span><img data-aos="fade-up" style="width: 20rem; aspect-ratio: 700/700; padding: 1rem" src="{{ asset('images/LOGO_JogawMarkach_footer_700x700.webp') }}" alt="Logo"/></span>
+        <div class="row justify-content-around">
+            <div class="social d-flex justify-content-center col-md-6 p-0">
+                <span data-aos="zoom-out" data-aos-offset="80" data-aos-delay="100" class="m-1"><a class="social-icon p-2 text-body-secondary"
+                    href="mailto:kontakt@jogawmarkach.pl?subject=Zapytanie ze strony JogawMarkach.pl"
+                    title="email"><i class="bi bi-envelope"></i></a></span>
+                <span data-aos="zoom-out" data-aos-offset="80" data-aos-delay="300" class="m-1"><a class="social-icon p-2 text-body-secondary"
+                    href="https://www.m.me/101829889521117" target="_blank" title="messenger"><i
+                    class="bi bi-messenger"></i></a></span>
+                <span id="telefon" data-bs-toggle="modal" data-bs-target="#numerTelefonu" data-aos="zoom-out" data-aos-offset="80" data-aos-delay="500" class="m-1"><a class="social-icon p-2 text-body-secondary"
+                    title="telefon"><i class="bi bi-telephone-fill"></i></a></span>
+            </div>
+
+            <div class="social d-flex justify-content-center col-md-6 p-0">
+                <span data-aos="zoom-out" data-aos-offset="80" data-aos-delay="500" class="m-1 text-center"><a class="social-icon p-2 text-body-secondary"
+                    href="https://www.facebook.com/KasiaLatekJoga" target="_blank" title="facebook"><i
+                    class="bi bi-facebook"></i></a></span>
+                <span data-aos="zoom-out" data-aos-offset="80" data-aos-delay="300" class="m-1"><a class="social-icon p-2 text-body-secondary"
+                    href="https://www.instagram.com/kasia_latek" target="_blank" title="instagram"><i
+                    class="bi bi-instagram"></i></a></span>
+                <span data-aos="zoom-out" data-aos-offset="80" data-aos-delay="100" class="m-1"><a id="maps-dol" class="social-icon p-2 text-body-secondary"
+                    href="https://maps.app.goo.gl/8e43LpAi1LE6PQqb9" target="_blank" title="google maps"><i
+                    class="bi bi-geo-alt-fill"></i></a></span>
+            </div>
+        </div>
+    </footer>
+
+ </div>   
+
+ 
+
+{% endblock %}

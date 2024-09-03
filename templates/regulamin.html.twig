@@ -1,0 +1,307 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}JogawMarkach.pl | Regulamin{% endblock %}
+
+{% block body %}
+
+    <div class="container-fluid d-flex flex-column p-0">
+    <h1 style="display:none">Marki — praktyka jogi i ćwiczenia pilates dla dorosłych</h1>
+
+    <button type="button" class="btn shadow z-3" id="btn-back-to-top">
+        <i style="color: #fef9f3 !important;" class="bi bi-arrow-up h2"></i>
+    </button>
+
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg bg-light p-0 shadow" style="padding: 10px 0 10px 0 !important; min-height: 68px; background-color: #fef9f3 !important;">
+                <div id="belka" class="container-fluid d-flex flex-row flex-nowrap">
+                
+                        <div class="navbar-brand d-flex align-items-center">
+                            <a href="{{ path ('app_jogawmarkach_homepage')}}">
+                                <img src="{{ asset ('img/LOGO_JogawMarkach_profilowe_fb_bez_tla.webp')}}" width="60" height="60" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1"><img src="{{ asset ('img/LOGO_Baner_JogawMarkach_60.webp')}}" style="width:80%; height:auto" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1">
+                            </a>
+                        </div>
+                        
+                        <div class="d-flex justify-content-end">
+                            <div id="nav-icon3" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+                <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNav">
+                        <ul class="navbar-nav ms-auto flex-nowrap">
+                            {# <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="bi bi-house-door"></i></a>
+                            </li> #}
+                            <li class="nav-item">
+                                <a href="{{ path ('app_jogawmarkach_homepage')}}#onas" title="O nas" class="nav-link">O nas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ path ('app_jogawmarkach_homepage')}}#oferta" title="Oferta" class="nav-link">Oferta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ path ('app_jogawmarkach_homepage')}}#grafik" title="Grafik i cennik" class="nav-link">Grafik i cennik</a>
+                            </li>
+                            {# <li class="nav-item">
+                                <a href="#cennik" title="Cennik" class="nav-link">Cennik</a>
+                            </li> #}
+                            <li class="nav-item">
+                                <a href="{{ path ('app_jogawmarkach_homepage')}}#kontakt" title="Kontakt" class="nav-link">Kontakt</a>
+                            </li>
+                            {# <li class="nav-item">
+                                <a class="nav-link fitssey">
+                                    <!-- Fitssey Auth Widget -->
+                                    <lb-auth-widget
+                                        auth-callback="fit();"
+                                        signup-label="Rejestracja"
+                                        login-label="Zaloguj"
+                                    ></lb-auth-widget>
+                                    <!-- end of Fitssey Auth Widget -->
+                                </a>
+                            </li> #}
+
+
+                        </ul>
+                </div>
+            </nav>         
+        </header>
+
+        <div class="container min-vh-100" style="margin-top: 68px;">
+            <h1 class="mt-5 mb-5 text-center">Regulamin <br>Studia JogawMarkach.pl</h1>
+            <p><strong>§ 1. POSTANOWIENIA OGÓLNE</strong></p>
+
+            <ol>
+                <li>Niniejszy regulamin (zwany także „Regulaminem”) określa zasady korzystania przez Klientów (zwanych dalej „Klubowiczami”) z usług oferowanych przez Klub JogawMarkach.pl (zwany także „Studiem”) położonym w Markach, przy ul. Legionowej 1B.</li>
+                <li>Klub prowadzony jest przez:
+                <ul>
+                    <li>BenMedia Bernard Waszczyk</li>
+                    <li>05-270 Marki, ul. Tęczowa 3a/2</li>
+                    <li>NIP 113-099-40-63</li>
+                    <li>REGON 141206873</li>
+                    <li>tel.: 606-671-190, email: <a href="mailto:kontakt@jogawmarkach.pl">kontakt@jogawmarkach.pl</a>.</li>
+                </ul>
+                </li>
+            </ol>
+
+            <ol>
+                <li>Firma BenMedia Bernard Waszczyk jest wpisana do Centralnej Ewidencji i Informacji o Działalności Gospodarczej Rzeczypospolitej Polskiej prowadzonej przez ministra właściwego d.s. gospodarki.</li>
+            </ol>
+
+            <ol>
+                <li>Regulamin określa także prawa i obowiązki osób korzystających z oferty Klubu.</li>
+                <li>Aktualny cennik usług świadczonych przez Klub dostępny jest w Studiu, na stronie internetowej <a href="http://www.jogawmarkach.pl">www.jogawmarkach.pl</a> oraz w aplikacji mobilnej.</li>
+            </ol>
+
+            <p><strong>§ 2. ŚWIADCZENIE USŁUG</strong></p>
+
+            <ol>
+                <li>Z oferty Klubu korzystać mogą osoby pełnoletnie i posiadające pełną zdolność do czynności prawnych. Osoby niepełnoletnie mogą korzystać z oferty klubu w towarzystwie lub za pisemną zgodą ich przedstawicieli ustawowych (rodziców lub opiekunów).</li>
+                <li>W przypadku uzasadnionych wątpliwości co do autentyczności pisemnej zgody rodzica lub opiekuna osoby niepełnoletniej, pracownicy Klubu mogą zażądać złożenia oświadczenia osobiście przez rodzica lub opiekuna prawnego.</li>
+                <li>Do korzystania z oferty Studia, w szczególności do wstępu na zajęcia grupowe i indywidualne, upoważnia ważny i opłacony w terminie karnet, wykupiony przez Klubowicza.</li>
+                <li>W przypadku korzystania przez Klubowicza z określonych rodzajów usług i karnetów, Klub może określić dodatkowe wymagania, jakie muszą zostać spełnione przez Klubowicza. W szczególności Klub może oczekiwać przedstawienia legitymacji uczniowskiej, legitymacji studenckiej lub legitymacji emeryta-rencisty, a także dokumentu umożliwiającego weryfikację wieku Klubowicza (dla ofert z ograniczeniami wiekowymi).</li>
+                <li>Klubowicz podlega prawom i obowiązkom wynikającym z Regulaminu oraz szczególnym warunkom wynikającym z wykupionego karnetu.</li>
+                <li>Status Klubowicza uzyskuje się w momencie zakupu wybranego karnetu, a co za tym idzie, także akceptacji niniejszego Regulaminu, nie wcześniej jednak, niż w momencie opłacenia raty za pierwszy okres rozliczeniowy i ewentualnych opłat dodatkowych, wynikających z wybranej przez Klubowicza oferty.</li>
+                <li>Niezależnie od wieku, z usług Klubu korzystać mogą wyłącznie osoby zdrowe, co do których nie zachodzą jakiekolwiek przeciwwskazania do wykonywania ćwiczeń fizycznych oferowanych w ramach świadczonych przez Klub usług. W przypadku zaistnienia wątpliwości co do stanu własnego zdrowia, w szczególności dotyczących ryzyka wystąpienia poważnego zagrożenia dla zdrowia lub życia w związku z wykonywaniem ćwiczeń w Klubie, zalecane jest niezwłoczne poddanie się badaniom lekarskim z orzeczeniem o braku przeciwwskazań do podejmowania aktywności fizycznej.</li>
+                <li>W przypadku zaistnienia jakichkolwiek wątpliwości co do możliwości dostosowania intensywności i obciążenia wykonywanych ćwiczeń, Klubowicz zobowiązany jest do poinformowania o tym pracowników Klubu i trenera lub instruktora prowadzącego zajęcia.</li>
+            </ol>
+
+            <p><strong>§ 3. OFERTA I DOSTĘP ELEKTRONICZNY</strong></p>
+
+            <ol>
+                <li>Do korzystania z oferty Klubu upoważnia zakupiony przez Klubowicza i opłacony w terminie karnet lub wykupiona usługa wejścia jednorazowego lub wielorazowego.</li>
+                <li>Ofertę Klubu obejmować mogą karnety bez limitu wejść, karnety na określoną liczbę wejść, karnety bez określonej daty końca, karnety bezpłatne oraz usługi jednorazowego oraz wielorazowego wejścia do Klubu.</li>
+                <li>Klubowicz podlega prawom i obowiązkom wynikającym z zakupionej usługi lub karnetu.</li>
+                <li>Wybrany karnet lub usługa mogą mieć określony termin ważności (od-do) lub mieć charakter bezterminowy, tj. bez określonej daty końca świadczenia usług.</li>
+                <li>Sprzedaż usług Klubu odbywa się w recepcji Klubu, za pośrednictwem strony internetowej Klubu <a href="http://www.jogawmarkach.pl">www.jogawmarkach.pl</a> oraz za pośrednictwem aplikacji Fitssey (zwanej dalej „Aplikacją mobilną”), udostępnianej Klubowi przez dostawcę oprogramowania firmę lightenbody™ z siedzibą przy al. Zwycięstwa 241/13, 81-521 Gdynia. Aplikacja dostępna jest na urządzenia mobilne z systemem Android oraz iOS.</li>
+                <li>Przy wybranych usługach, Klub może wymagać zawarcia, w formie pisemnej lub elektronicznej, umowy (zwanej dalej „Umową”) na świadczenie usług między Klubem a Klubowiczem. Dla zawarcia umowy konieczne jest podanie danych osobowych Klubowicza, określonych przez Klub.</li>
+                <li>Umowa określa warunki korzystania z usług Klubu, w tym okres ważności karnetu, terminy płatności i wysokości opłat za karnet, formę płatności, okres wypowiedzenia i informację o liczbie wejść przysługujących w ramach zakupionego karnetu.</li>
+                <li>Klubowicz zobowiązuje się do opłacania rat i opłat za usługi świadczone przez Klub zgodnie z terminami płatności i wysokościami opłat wykazanymi w wybranej przez Klubowicza ofercie.</li>
+                <li>Płatność za pierwszy okres rozliczeniowy i opłaty dodatkowe, określone przez Klub dla danej oferty, winna być wykonana w dniu zakupu karnetu, chyba że ustawienia oferty wybranej przez Klubowicza stanowią inaczej.</li>
+                <li>Wykupiony karnet upoważnia do wstępu na teren Klubu tylko osobę, dla której jest on przypisany. W wyjątkowych sytuacjach pracownicy Klubu mogą upoważnić do wstępu na teren Klubu inne osoby na podstawie karnetu Klubowicza.</li>
+                <li>W przypadku zawarcia umowy lub zakupu karnetu na rzecz osoby niepełnoletniej, stroną umowy jest rodzic lub opiekun prawny Klubowicza.</li>
+                <li>Klubowicz ma możliwość przeniesienia praw i obowiązków wynikających z wykupionego karnetu na inną osobę, za jej zgodą. Przeniesienie praw i obowiązków może nastąpić jedynie w porozumieniu z pracownikami Klubu oraz w obecności osoby, na którą prawa i obowiązki są przenoszone.</li>
+                <li>Pracownicy Klubu mogą prosić Klubowicza o okazanie dokumentu tożsamości ze zdjęciem przy każdym wejściu na teren obiektu, w celu potwierdzenia jego tożsamości. W przypadku odmowy okazania dokumentu, pracownicy Klubu mają prawo odmowy wpuszczenia Klubowicza na teren Klubu.</li>
+                <li>Informacje dotyczące swoich danych osobowych oraz wykupionej oferty, mogą zostać uzyskane przez Klubowicza za pośrednictwem pracowników Klubu, strony internetowej (zwanej także „Strefą Klubowicza”) oraz aplikacji mobilnej. Logowanie do Strefy Klubowicza oraz aplikacji mobilnej odbywa się za pomocą indywidualnego loginu Klubowicza (adres mailowy podany podczas rejestracji konta Klubowicza) oraz hasła przesłanego przez system Fitssey drogą mailową lub ustawionego samodzielnie przez Klubowicza.</li>
+                <li>Klubowicz jest zobowiązany do zachowania w tajemnicy danych dostępowych do Strefy Klubowicza i aplikacji mobilnej i nie może ich udostępniać osobom trzecim. Udostępnienie loginu i hasła do Strefy Klubowicza i aplikacji mobilnej osobie trzeciej może skutkować zablokowaniem dostępu do wyżej wymienionych kanałów komunikacji elektronicznej oraz wypowiedzeniem karnetu przez Klub.</li>
+                <li>Dostępne dla Klubowiczów oferty, w szczególności usługi i karnety, mogą zawierać możliwość wprowadzenia przerwy w obowiązywaniu, zwanej zawieszeniem lub zamrożeniem. Informacji dotyczących możliwych przerw obowiązywaniu usługi lub karnetu udzielają pracownicy Klubu.</li>
+            </ol>
+
+            <p><strong>§ 4. OPŁATY ZA KORZYSTANIE Z USŁUG KLUBU</strong></p>
+
+            <ol>
+                <li>W zamian za korzystanie z usług świadczonych przez Klub, Klubowicz zobowiązany jest do uiszczania na rzecz Klubu opłat ustalonych dla danej oferty i w terminach wynikających z okresów rozliczeniowych danego karnetu.</li>
+                <li>Wysokość opłat uzależniona jest od wybranej przez Klubowicza oferty i może obejmować opłaty uiszczane jednorazowo (w przypadku karnetów płatnych w jednej racie z góry), jak i opłaty abonamentowe (w przypadku zakupu karnetu płatnego w ratach). Karnet może także przewidywać obowiązek uiszczenia opłat dodatkowych, w tym opłaty początkowej, tj. jednorazowej i bezzwrotnej opłaty wpisowej. Wysokości opłat określa aktualny cennik dostępny w Klubie, na stronie internetowej <a href="http://www.jogawmarkach.pl">www.jogawmarkach.pl</a> i w aplikacji mobilnej.</li>
+                <li>Okresem rozliczeniowym karnetu jest okres 30 (słownie: trzydziestu) dni, chyba że warunki danej oferty stanowią inaczej.</li>
+                <li>Opłaty na świadczone przez Klub usługi winny być wnoszone z góry, najpóźniej w dniu, na który przypada termin płatności wynikający z wybranej przez Klubowicza oferty.</li>
+                <li>W przypadku nieuiszczenia opłat w terminie, dostęp do Klubu, w szczególności wstęp na teren Klubu oraz możliwość zapisu na zajęcia i udziału w nich, mogą zostać zablokowane do momentu dokonania płatności przez Klubowicza.</li>
+                <li>W przypadku nieuiszczenia przez Klubowicza płatności za świadczone przez Klub usługi w określonym terminie, Klub zastrzega sobie możliwość podejmowania działań windykacyjnych, w tym wysyłania monitów drogą elektroniczną (wiadomość e-mail, SMS lub push) lub listownie, na adres podany podczas rejestracji Klubowicza, a także do przekazywania do zewnętrznej firmy windykacyjnej danych Klubowicza niezbędnych do procesu windykacji.</li>
+                <li>Płatności z tytułu świadczonych przez Klub usług mogą być dokonywane w recepcji Klubu, a także za pośrednictwem kanałów elektronicznych, takich jak Strefa Klubowicza i aplikacja mobilna.</li>
+                <li>Płatności za usługi świadczone przez Klub mogą być uiszczane przez Klubowicza gotówką i kartą płatniczą, a także za pośrednictwem zewnętrznych systemów płatniczych w przypadku zawarcia przez Klub umów z ich operatorami. Dopuszczalne formy płatności mogą być określane indywidualnie dla każdego karnetu.</li>
+                <li>Operatorem płatności za pomocą przelewów online, w tym płatności BLIK, jest PayPro S.A. z siedzibą w Poznaniu przy ul. Pastelowej 8, 60-198 Poznań, wpisanej do Rejestru Przedsiębiorców Krajowego Rejestru Sądowego prowadzonego przez Sąd Rejonowy Poznań Nowe Miasto i Wilda, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000347935, numer NIP 7792369887, świadcząca usługę bramki płatniczej pod marką Przelewy24.</li>
+                <li>W zależności od wybranej przez Klubowicza formy płatności, Klub może przekazać Klubowiczowi potwierdzenie płatności w formie paragonu fiskalnego z urządzenia rejestrującego (w przypadku płatności gotówką lub kartą w recepcji Klubu) lub faktury imiennej w formie papierowej lub elektronicznej (w przypadku płatności elektronicznej lub na wyraźne życzenie Klubowicza).</li>
+            </ol>
+
+            <p><strong>§ 5. ROZWIĄZANIE LUB ODSTĄPIENIE OD UMOWY</strong></p>
+
+            <ol>
+                <li>Klubowicz może wypowiedzieć korzystanie z karnetu lub usługi świadczonej przez Klub na zasadach opisanych w niniejszym regulaminie oraz zgodnie z zasadami danej usługi lub karnetu.</li>
+                <li>Wypowiedzenie z zachowaniem okresu wypowiedzenia, określonego dla danej usługi lub karnetu, powinno zostać złożone w formie pisemnej, mailowej lub poprzez zgłoszenie go poprzez Strefę Klubowicza lub aplikację mobilną (jeśli Klub dopuszcza taką możliwość), pod rygorem nieważności.</li>
+                <li>Wypowiedzenie bez zachowania okresu wypowiedzenia (ze skutkiem natychmiastowym) może zostać złożone w formie pisemnej lub mailowej pod rygorem nieważności oraz z podaniem przyczyny. Klub winien potwierdzić przyjęcie wypowiedzenia Klubowicza i zakończenie świadczenia usług poprzez kontakt osobisty, mailowy lub telefoniczny.</li>
+                <li>Niezależnie od zasad obowiązujących dla danej usługi lub karnetu, Klub ma prawo wypowiedzenia ze skutkiem natychmiastowym świadczenia usługi lub wypowiedzenia ze skutkiem natychmiastowym karnetu Klubowiczowi, który w sposób rażący naruszył zapisy niniejszego Regulaminu i/lub warunki korzystania z wybranej usługi lub karnetu. W szczególności dotyczy to następujących sytuacji:
+                <ol>
+                    <li>Klubowicz zachowuje się względem pracowników Klubu jak i pozostałych Klubowiczów w sposób wulgarny, obraźliwy lub agresywny (co dotyczy zarówno zachowań werbalnych jak i fizycznych), mimo upomnień ze strony pracowników Klubu.</li>
+                    <li>Klubowicz przebywa na terenie Klubu pod wpływem alkoholu lub innych środków wpływających na stan świadomości (środki odurzające, substancje psychotropowe i psychoaktywne - tzw. „dopalacze”).</li>
+                    <li>Klubowicz, podczas przebywania na terenie Klubu, pali papierosy lub korzysta z ich elektronicznych odpowiedników - tzw. „e-papierosy”.</li>
+                    <li>Klubowicz udostępnia swoje indywidualne dane dostępowe do Strefy Klubowicza i aplikacji mobilnej osobom trzecim, tym samym umożliwiając osobom nieupoważnionym korzystanie z usług Klubu.</li>
+                    <li>Klubowicz swoim niewłaściwym zachowaniem naraża innych Klubowiczów, pracowników Klubu lub osoby postronne na ryzyko utraty zdrowia lub życia.</li>
+                    <li>Klubowicz wnosi na teren Klubu substancje i przedmioty niebezpieczne, w szczególności niebezpieczne narzędzia, broń, materiały wybuchowe lub łatwopalne.</li>
+                    <li>Klubowicz w sposób uporczywy nie stosuje się do poleceń wydawanych przez pracowników Klubu.</li>
+                    <li>Klubowicz zalega z uiszczaniem opłat za świadczone przez Klub usługi.</li>
+                </ol>
+                </li>
+                <li>W przypadku wypowiedzenia świadczenia przez Klub usług z winy Klubowicza, uiszczone opłaty abonamentowe oraz inne opłaty wynikające z wybranej usługi lub karnetu nie podlegają zwrotowi.</li>
+                <li>Zaprzestanie świadczenia usług przez Klub jest również możliwe na mocy porozumienia stron.</li>
+            </ol>
+
+            <p><strong>§ 6. REKLAMACJE I POLITYKA ZWROTÓW</strong></p>
+
+            <ol>
+                <li>Reklamacje związane ze świadczeniem przez Klub usług lub zakupem przez Klubowiczów karnetów, mogą zostać złożone w recepcji Klubu lub przesłane na adres korespondencyjny Klubu: 05-270 Marki, ul. Tęczowa 3a/2. Złożenie reklamacji jest także możliwe w formie elektronicznej, poprzez przesłanie jej na adres mailowy Klubu: <a href="mailto:kontakt@jogawmarkach.pl">kontakt@jogawmarkach.pl</a>.</li>
+                <li>W treści reklamacji należy dokładnie opisać zastrzeżenia stanowiące podstawę roszczenia, ze wskazaniem daty i godziny ewentualnych zdarzeń stanowiących podstawę zgłoszenia reklamacyjnego.</li>
+                <li>Klub rozpatruje reklamacje w terminie nie dłuższym niż 30 dni od daty jej otrzymania. Odpowiedź na reklamację udzielona zostanie na piśmie przesłanym na adres korespondencyjny osoby zgłaszającej reklamację. Odpowiedź może także zostać przesłana drogą elektroniczną, na adres mailowy wskazany w treści reklamacji.</li>
+                <li>Klubowiczowi dokonującemu zakupu usługi lub karnetu za pośrednictwem kanałów sprzedaży zdalnej, to jest Strefy Klubowicza i/lub aplikacji mobilnej, przysługuje prawo do rezygnacji z umowy w terminie 14 dni od daty jej zawarcia. Podstawę rezygnacji stanowi pisemne oświadczenie o rezygnacji z usługi lub karnetu, przekazane pracownikom Klubu lub przesłane na adres korespondencyjny Klubu: 05-270 Marki, ul. Tęczowa 3a/2. Oświadczenie nie wymaga podania przyczyny rezygnacji.</li>
+                <li>Jeśli nabyte przez Klubowicza usługa lub karnet zostały w pełni wykorzystane w okresie 14 dni od daty zakupu, prawo odstąpienia od zakupu nie przysługuje.</li>
+                <li>W przypadku skutecznej rezygnacji z wykupionej usługi lub karnetu, usługa lub karnet uznawane są za niebyłe. Klub zwróci w takim przypadku środki wpłacone przez Klubowicza, który dokonał odstąpienia od zakupionej usługi lub karnetu. Zwrot następuje w sposób uzgodniony z Klubowiczem.</li>
+                <li>Stosownie do art. 38 ustawy z dnia 30 maja 2014 r. o prawach konsumenta, prawo do odstąpienia od umowy nie przysługuje konsumentowi w odniesieniu do umowy m.in. o świadczenie usług, jeżeli przedsiębiorca wykonał w pełni usługę za wyraźną zgodą konsumenta, który został poinformowany przed rozpoczęciem świadczenia, że po spełnieniu świadczenia przez przedsiębiorcę utraci prawo odstąpienia od umowy.</li>
+            </ol>
+
+            <p>Sytuacja taka występuje w przypadku, w którym Klubowicz będący konsumentem poprzez przystąpienie do korzystania z zakupionego dostępu do zajęć (poprzez rozpoczęcie uczestnictwa w zajęciach lub nie odwołanie rezerwacji zajęć, które się odbyły) przed upływem terminu do odstąpienia od umowy dotyczącej dostępu do zajęć, wyrazi zgodę na wykonanie przez Klub usługi polegającej na prowadzeniu zajęć przed upływem okresu do odstąpienia od zawartej na odległość umowy, a te zajęcia się w pełni odbędą.</p>
+
+            <p><strong>§ 7. OGÓLNE ZASADY KORZYSTANIA Z KLUBU</strong></p>
+
+            <ol>
+                <li>W trakcie przebywania na terenie Klubu Klubowicze zobowiązani są do przestrzegania następujących zasad:
+                <ol>
+                    <li>Klubowicze zobowiązani są do zachowywania się na terenie Klubu z poszanowaniem ogólnie przyjętych norm kulturalnego zachowania oraz w taki sposób, aby nie utrudniać lub nie zakłócać innym Klubowiczom możliwości korzystania z usług świadczonych przez Klub.</li>
+                    <li>Klubowicze zobowiązani są do korzystania z usług Klubu, pomieszczeń Klubu oraz wyposażenia Klubu, w tym sprzętów do ćwiczeń, zgodnie z ich przeznaczeniem oraz instrukcjami użytkowania dla każdego urządzenia lub przyrządu. Klubowicze winni także stosować się do instrukcji wydawanych przez pracowników Klubu.</li>
+                    <li>W przypadku wątpliwości co do sposobu korzystania z danego urządzenia lub przyrządu do ćwiczeń, Klubowicze zobowiązani są do zgłoszenia się do pracownika Klubu i uzyskania instrukcji.</li>
+                    <li>Korzystanie z usług Klubu możliwe jest tylko dla osób ubranych w strój i obuwie sportowe, odpowiednie do rodzaju i zakresu wykonywanych ćwiczeń - chyba że ich wykonywanie jest wymagane bez obuwia. Obuwie sportowe winno zakrywać palce oraz pięty. Nie jest dozwolone ćwiczenie w obuwiu noszonym poza terenem Klubu.</li>
+                    <li>Klubowicze zobowiązani są do przestrzegania zasad higieny i czystości, w szczególności do korzystania podczas ćwiczeń z ręczników oraz do umycia/dezynfekcji danego urządzenia lub przyrządu po zakończeniu ćwiczeń, przeznaczonym do tego środkiem dezynfekującym lub myjącym.</li>
+                    <li>Zakazane jest wykonywanie przez Klubowiczów czynności mogących skutkować uszkodzeniem infrastruktury Klubu, w tym jego pomieszczeń oraz sprzętu i przyrządów przeznaczonych do ćwiczeń.</li>
+                </ol>
+                </li>
+                <li>Na terenie Klubu bezwzględnie zakazane są następujące czynności i zachowania. Naruszenie przez Klubowicza poniżej wymienionych zasad może skutkować nakazaniem opuszczenia Klubu:
+                <ol>
+                    <li>Zachowywanie się w sposób wulgarny, obraźliwy oraz stosowanie agresji słownej oraz fizycznej w stosunku do jakichkolwiek osób przebywających na terenie Klubu.</li>
+                    <li>Podejmowania jakichkolwiek działań mogących stworzyć zagrożenie dla zdrowia i/lub życia osób przebywających na terenie Klubu.</li>
+                    <li>Spożywania oraz przebywania na terenie Klubu pod wpływem alkoholu, środków wpływających na stan świadomości (w tym środków odurzających, substancji psychotropowych i/lub psychoaktywnych - tzw. „dopalaczy”).</li>
+                    <li>Palenie tytoniu lub elektronicznych odpowiedników - tzw. „e-papierosów”.</li>
+                    <li>Wnoszenie na teren Klubu jakichkolwiek przedmiotów i środków mogących stworzyć zagrożenie dla zdrowia i/lub życia osób przebywających na terenie Klubu, w szczególności ostrych przedmiotów i narzędzi, broni, materiałów łatwopalnych i wybuchowych.</li>
+                    <li>Wywieszanie lub rozdawanie reklam i ulotek, prowadzenie akcji marketingowych i promocyjnych bez wcześniejszej zgody pracowników Klubu.</li>
+                    <li>Prowadzenie sprzedaży usług lub przedmiotów w jakiejkolwiek formie.</li>
+                </ol>
+                </li>
+                <li>Klub zastrzega sobie prawo odmowy wpuszczenia na teren Klubu lub wyproszenia z jego terenu osób zachowujących się w sposób agresywny lub inny, powszechnie uznany za niedopuszczalny, w tym osób będących pod wpływem alkoholu lub środków wymienionych powyżej w pkt. 2. lit. c.</li>
+                <li>Prowadzenie na terenie Klubu, na rzecz innych osób, treningów personalnych lub jakichkolwiek zajęć zorganizowanych wymaga wcześniejszego uzyskania zgody od Klubu wyrażonej na piśmie.</li>
+                <li>Wszelkie sprzęty udostępnione Klubowiczowi na czas prowadzonego treningu lub zajęć zorganizowanych pozostają własnością Klubu.</li>
+                <li>Korzystanie ze sprzętu i przyrządów dostępnych na terenie Klubu oraz będących własnością Klubu jest możliwe wyłącznie zgodnie z instrukcjami dla tych urządzeń lub przyrządów. W przypadku wątpliwości co do sposobu wykorzystania urządzenia lub przyrządu, Klubowicz zobowiązany jest do zasięgnięcia informacji u pracowników Klubu.</li>
+                <li>Zabronione jest wykorzystywanie urządzeń, przyrządów i innych elementów wyposażenia Klubu, co do których istnieje podejrzenie nieprawidłowego działania, w tym ich uszkodzenia. O wszelkich zauważonych usterkach na terenie Klubu Klubowicz zobowiązany jest zawiadomić pracowników Klubu.</li>
+                <li>Klubowicze są zobowiązani do pozostawieniu ładu i porządku w miejscu wykonywania ćwiczeń oraz po ich zakończeniu. Wszelkie przyrządy podjęte ze stojaka lub półki winny być odłożone na miejsce po zakończeniu ćwiczeń.</li>
+                <li>W przypadku nieobecności pracowników Klubu, Klubowicze zobowiązani są do przestrzegania przyjętych zasad porządku i bezpieczeństwa, w szczególności zasad określonych w niniejszym Regulaminie oraz instrukcji obsługi urządzeń i przyrządów dostępnych w Klubie, jeśli taka instrukcja została wydana.</li>
+                <li>Wszelka aktywność związana z wykonywaniem ćwiczeń i uczestnictwem w zajęciach zorganizowanych, indywidualnych oraz grupowych, podejmowana jest przez Klubowicza na własną odpowiedzialność. W przypadku wątpliwości co do możliwości wykonywania danego ćwiczenia i/lub uczestnictwa w zajęciach zorganizowanych, Klubowicz zobowiązany jest do odbycia konsultacji lekarskiej z uzyskaniem orzeczenia o zdolności do podejmowania aktywności fizycznej.</li>
+                <li>W przypadku złego samopoczucia, występującego urazu lub jakichkolwiek innych przeciwwskazań co do wykonywania ćwiczeń lub udziału w zajęciach zorganizowanych, Klubowicz zobowiązany jest do niezwłocznego poinformowania trenera i/lub instruktora prowadzącego zajęcia o zaistniałym fakcie. Informacja powinna zostać przekazana nie później, niż przed rozpoczęciem zajęć i/lub treningu.</li>
+                <li>Klub nie ponosi odpowiedzialności za jakiekolwiek uszkodzenia mienia Klubowicza bądź uszczerbki na zdrowiu powstałe w wyniku podejmowanej aktywności fizycznej, chyba że uszkodzenie lub uszczerbek na zdrowiu były zawinione przez pracownika Klubu.</li>
+                <li>Odpowiedzialność za wszelkie uszkodzenia mienia Klubu, Klubowicza i/lub uszczerbki na zdrowiu Klubowicza niepełnoletniego ponosi jego rodzic i/lub opiekun prawny.</li>
+                <li>Klubowicze mogą przebywać na terenie Klubu w godzinach jego otwarcia. Przebywanie na sali/salach zajęć zorganizowanych dozwolone jest jedynie w czasie trwania tych zajęć. Godziny otwarcia Klubu podane są do wiadomości w Klubie, w Strefie Klubowicza i aplikacji mobilnej.</li>
+                <li>Dostęp do poszczególnych pomieszczeń Klubu oraz do jego usług może być ograniczany przez ofertę wybraną przez Klubowicza. Ograniczenia mogą w szczególności dotyczyć dostępu do Klubu jedynie w wybranych godzinach lub możliwości zapisu jedynie na wybrane zajęcia zorganizowane.</li>
+                <li>W wyjątkowych sytuacjach Klub może zostać przymusowo zamknięty, a co za tym idzie, nie będzie możliwe świadczenie usług na rzecz Klubowiczów. Za sytuacje wyjątkowe przyjmuje się m.in. konieczność wykonania pilnego remontu, zabiegów sanitarnych lub wprowadzenie ogólnokrajowych lub lokalnych ograniczeń w funkcjonowaniu obiektów sportowych. W momencie przymusowego zamknięcia Klubu, Klubowicze zostaną o tym poinformowani za pomocą kanałów komunikacji elektronicznej, w szczególności za pośrednictwem Strefy Klubowicza, aplikacji mobilnej oraz wiadomości e-mail i/lub SMS.</li>
+                <li>Podczas ćwiczeń dozwolone jest słuchanie muzyki przez Klubowicza jedynie za pośrednictwem indywidualnych słuchawek. Zabrania się słuchania muzyki bezpośrednio z telefonu, poprzez głośnik Bluetooth lub inne urządzenie odtwarzające, niebędące słuchawkami.</li>
+            </ol>
+
+            <p><strong>§ 8. ZASADY WEJŚCIA NA TEREN KLUBU</strong></p>
+
+            <ol>
+                <li>Do wejścia na teren Klubu upoważnia zakupiona i opłacona usługa wejścia lub imienny karnet. Usługi wejścia oraz karnety możliwe są do zakupu w recepcji Klubu oraz w Strefie Klubowicza oraz w aplikacji mobilnej.</li>
+                <li>Wejścia na teren Klubu są rejestrowane z wykorzystaniem systemu komputerowego Fitssey. Rejestracja wejścia odbywa się przez pracowników Klubu na skutek okazania przez Klubowicza karty klubowej lub po podaniu danych osobowych Klubowicza, umożliwiających jego odszukanie w bazie Klubowiczów.</li>
+                <li>Pracownicy Klubu mogą prosić o okazanie przez Klubowicza dokumentu ze zdjęciem potwierdzającego tożsamość Klubowicza. Pracownicy Klubu mogą odmówić wpuszczenia Klubowicza na teren Klubu w sytuacji odmowy okazania dokumentu tożsamości lub braku możliwości jednoznacznej identyfikacji Klubowicza.</li>
+                <li>Klub zastrzega sobie prawo do nie wpuszczenia na teren Klubu osoby, która identyfikuje się kartą klubową, które przypisane są do innego Klubowicza.</li>
+                <li>Osoby niebędące Klubowiczami, tj. nieposiadające profilu Klubowicza w bazie Klubowiczów Klubu i/lub nieposiadające ważnego karnetu lub usługi wejścia mogą zostać wpuszczone na teren Klubu po uprzedniej rejestracji w recepcji lub poprzez Strefę Klubowicza lub aplikację mobilną oraz po wykupieniu usługi i/lub karnetu upoważniającego do wstępu na teren Klubu.</li>
+                <li>Klub zastrzega sobie prawo do odstąpienia od powyższych zasad w uzasadnionych przypadkach.</li>
+            </ol>
+
+            <p><strong>§ 9. ZASADY UDZIAŁU W ZAJĘCIACH ZORGANIZOWANYCH</strong></p>
+
+            <ol>
+                <li>Klubowicz korzystający z usług Klubu w ramach zajęć zorganizowanych zobowiązany jest do przestrzegania zapisów Regulaminu, w tym zasad przewidzianych w par. 7 niniejszego Regulaminu.</li>
+                <li>Do udziału w zajęciach zorganizowanych upoważnia zakupiony i opłacony w terminie karnet lub usługa wejścia lub usługa treningu personalnego.</li>
+                <li>Zajęcia zorganizowane odbywają się w godzinach określonych przez Klub. Aktualny grafik zajęć dostępny jest w Klubie, w Strefie Klubowicza oraz w aplikacji mobilnej.</li>
+                <li>Klub zastrzega sobie prawo do wprowadzenia ograniczeń zapisów, w tym udostępnienia zapisów na zajęcia nie wcześniej niż 30 dni przed ich rozpoczęciem, a także do wprowadzenia możliwości samodzielnego wypisania się z zajęć przez Klubowicza nie później, niż 3 godziny przed rozpoczęciem zajęć.</li>
+                <li>Klub określa maksymalną liczbę uczestników każdych zajęć, uwzględniając ich specyfikę oraz pojemność sali, na której będą się one odbywały, dążąc do zapewnienia wysokiego komfortu dla uczestników tych zajęć.</li>
+                <li>Klub zastrzega sobie prawo do określenia minimalnej liczby zapisanych Klubowiczów, wymaganej do odbycia się zajęć. W sytuacji niewypełnienia określonego minimum, zajęcia zostaną odwołane, a Klubowicze zapisani na nie zostaną powiadomieni o odwołaniu drogą elektroniczną, poprzez wiadomość mailową, SMS i/lub wiadomość push.</li>
+                <li>W przypadku zapisania się na zajęcia większej liczby Klubowiczów, niż przewiduje limit dla danych zajęć, pierwszeństwo udziału mają Klubowicze zapisani na zajęcia, a następnie Klubowicze zapisani na listę rezerwową. W przypadku osób nie zapisanych wcześniej, o możliwości udziału w zajęciach decyduje dostępność miejsc na sali.</li>
+                <li>Klubowicz, który nie może uczestniczyć w zajęciach, na które jest zapisany, zobowiązany jest do wcześniejszego wypisania się z listy za pośrednictwem recepcji Klubu, Strefy Klubowicza lub aplikacji mobilnej.</li>
+                <li>Nie wypisanie się Klubowicza z listy uczestników zajęć oraz nie pojawienie się na zajęciach może skutkować konsekwencjami w postaci karnego rozliczenia wejścia z karnetu lub nałożeniem blokady na samodzielne zapisy.</li>
+                <li>W trakcie zajęć Klubowicz zobowiązany jest do stosowania się do poleceń wydawanych przez trenera/instruktora prowadzącego zajęcia.</li>
+                <li>W uzasadnionych przypadkach, takich jak zachowania niebezpieczne, wulgarne lub agresywne w formie słownej lub fizycznej, niestosowanie się do poleceń prowadzącego zajęcia instruktora/trenera, Klubowicz może zostać wykluczony z zajęć. W sytuacji wykluczenia, Klubowicz zobowiązany jest do niezwłocznego opuszczenia sali.</li>
+                <li>Bezwzględnie zakazane jest uczestniczenie przez Klubowiczów w zajęciach zorganizowanych prowadzonych przez osoby niebędące trenerami i/lub instruktorami, tj. niebędące członkami personelu Klubu i niemające zawartej z Klubem umowy.</li>
+                <li>W przypadku zajęć indywidualnych i/lub treningów personalnych, podczas pierwszych zajęć może odbyć się konsultacja wstępna, której celem jest zebranie informacji o stanie zdrowia Klubowicza, ale także celach treningowych czy oczekiwanych rezultatach. Klubowicz zobowiązany jest do podania maksymalnie wyczerpujących, zgodnych ze stanem faktycznym informacji dotyczących swojego stanu zdrowia. Trener oraz Klub nie biorą odpowiedzialności za ewentualne uszczerbki na zdrowiu Klubowicza, powstałe na skutek zatajenia przez niego informacji.</li>
+                <li>Trener po odbytej konsultacji wstępnej ma prawo odmówić wykonania usługi, jeśli w jego opinii istnieją przeciwwskazania do podejmowania przez Klubowicza aktywności fizycznej lub zaobserwowane zostały dysfunkcje, które nie leżą w jego zakresie wiedzy i kompetencji.</li>
+                <li>Zakupione usługi w postaci pakietów treningów personalnych nie podlegają zwrotowi.</li>
+            </ol>
+
+            <p><strong>§ 10. ODPOWIEDZIALNOŚĆ ZA SZKODY</strong></p>
+
+            <ol>
+                <li>Klubowicz zobowiązany jest do naprawienia wszelkich szkód w mieniu wyrządzonych na rzecz Klubu lub innego Klubowicza, a także za szkody wyrządzone na osobie na skutek zamierzonego, bezprawnego działania lub zaniechania.</li>
+                <li>Klub odpowiada względem Klubowiczów za szkody w mieniu lub w osobie, związane z nienależytym lub niepełnym wykonaniem świadczonych usług, a także za szkody powstałe na skutek zamierzonego, bezprawnego działania lub zaniechania.</li>
+                <li>Roszczenia z tytułu naprawy szkody Klubowicze mogą składać drogą pisemną, na adres korespondencyjny Klubu: 05-270 Marki, ul. Tęczowa 3a/2.</li>
+            </ol>
+
+            <p><strong>§ 11. KORZYSTANIE Z SYSTEMU FITSSEY</strong></p>
+
+            <ol>
+                <li>Każdy Klubowicz posiadający konto w bazie Klubowiczów Klubu ma dostęp do systemu internetowego Fitssey za pośrednictwem indywidualnego konta Klubowicza.</li>
+                <li>Dostęp do konta można uzyskać poprzez zalogowanie się do Strefy Klubowicza pod adresem app.fitssey.com/jogawmarkach lub aplikacji mobilnej za pomocą loginu, który stanowi adres mailowy przypisany do profilu Klubowicza oraz hasła, które zostało automatycznie nadane przez system w momencie utworzenia profilu Klubowicza i wysłane na adres mailowy Klubowicza lub hasła, które Klubowicz samodzielnie przypisał do profilu.</li>
+                <li>W Strefie Klubowicza oraz aplikacji mobilnej, dostarczanej przez Fitssey, Klubowicz może uzyskać następujące informacje i możliwości (m.in.):
+                <ol>
+                    <li>zebrane dane osobowe, w tym adresowe i kontaktowe,</li>
+                    <li>zakupione karnety i usługi,</li>
+                    <li>terminy płatności i wysokości opłat z tytułu świadczonych przez Klub usług,</li>
+                    <li>grafik zajęć zorganizowanych, w tym możliwość zapisu na zajęcia i podglądem już złożonych zapisów,</li>
+                    <li>oferta karnetów i usług, tj. pakietów treningów personalnych z możliwością zakupu,</li>
+                    <li>bieżącą komunikację z Klubu w formie wiadomości.</li>
+                </ol>
+                </li>
+                <li>Klubowicz zobowiązany jest do wykorzystywania udostępnionych funkcjonalności zgodnie z ich przeznaczeniem.</li>
+            </ol>
+
+            <p><strong>§ 12. PRZETWARZANIE I OCHRONA DANYCH OSOBOWYCH</strong></p>
+
+            <ol>
+                <li>Administratorem danych osobowych Klubowiczów jest BenMedia Bernard Waszczyk, 05-270 Marki, ul. Tęczowa 3a/2, NIP: 113-099-40-63, REGON: 141206873.</li>
+                <li>Dane osobowe Klubowiczów są przetwarzane przez BenMedia Bernard Waszczyk w celu przechowywania informacji o zakupionych usługach oraz karnetach, a także realizacji usług sportowo-rekreacyjnych.</li>
+                <li>Za zgodą Klubowicza, jego dane osobowe będą przetwarzane także w celach marketingowych oraz badania opinii publicznej.</li>
+                <li>Klub oświadcza, że dane Klubowiczów nie będą udostępniane lub przekazywane żadnym podmiotom trzecim.</li>
+                <li>Każdy Klubowicz ma prawo dostępu do pełni przechowywanych na swój temat danych osobowych, a także do ich edycji, uzupełniania lub usuwania z bazy danych prowadzonej przez BenMedia Bernard Waszczyk.</li>
+                <li>Podanie przez Klubowicza jego danych jest dobrowolne, lecz niezbędne w celu świadczenia usług przez Klub.</li>
+                <li>We wszelkich sprawach związanych z przetwarzaniem danych osobowych Klubowicz może kontaktować się z BenMedia Bernard Waszczyk listownie na adres 05-270 Marki, ul. Tęczowa 3a/2 bądź drogą elektroniczną na adres <a href="mailto:kontakt@jogawmarkach.pl">kontakt@jogawmarkach.pl</a>.</li>
+            </ol>
+
+            <p><strong>§ 13. POSTANOWIENIA KOŃCOWE</strong></p>
+
+            <ol>
+                <li>Klubowicz zobowiązany jest do powiadomienia Klubu o zmianie danych osobowych, w szczególności adresu zamieszkania, adresu do korespondencji, adresu mailowego bądź numeru kontaktowego. Jeśli Klub udostępnia możliwość samodzielnej zmiany danych na profilu Klubowicza, poprzez Strefę Klubowicza lub aplikację mobilną, Klubowicz jest zobowiązany do niezwłocznego zaktualizowania danych po zaistnieniu zmiany.</li>
+                <li>Wszelka korespondencja między Klubem a Klubowiczem odbywać się będzie drogą elektroniczną z wykorzystaniem adresu mailowego i telefonu kontaktowego podanego przez Klubowicza podczas rejestracji konta.</li>
+                <li>Z treścią Regulaminu można zapoznać się w Klubie, na stronie internetowej <a href="http://www.jogawmarkach.pl">www.jogawmarkach.pl</a> oraz w aplikacji mobilnej.</li>
+            </ol>
+
+            <p>W sprawach nieuregulowanych niniejszym Regulaminem, zastosowanie mają przepisy obowiązującego prawa, w szczególności przepisy Kodeksu Cywilnego.</p>
+
+        </div>
+
+    </div>
+{% endblock %}

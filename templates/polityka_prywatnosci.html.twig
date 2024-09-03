@@ -1,0 +1,148 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}JogawMarkach.pl | Polityka prywatności{% endblock %}
+
+{% block body %}
+
+    <div class="container-fluid d-flex flex-column p-0">
+    <h1 style="display:none">Marki — praktyka jogi i ćwiczenia pilates dla dorosłych</h1>
+
+    <button type="button" class="btn shadow z-3" id="btn-back-to-top">
+        <i style="color: #fef9f3 !important;" class="bi bi-arrow-up h2"></i>
+    </button>
+
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg bg-light p-0 shadow" style="padding: 10px 0 10px 0 !important; min-height: 68px; background-color: #fef9f3 !important;">
+                <div id="belka" class="container-fluid d-flex flex-row flex-nowrap">
+                
+                        <div class="navbar-brand d-flex align-items-center">
+                            <a href="{{ path ('app_jogawmarkach_homepage')}}">
+                                <img src="{{ asset ('img/LOGO_JogawMarkach_profilowe_fb_bez_tla.webp')}}" width="60" height="60" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1"><img src="{{ asset ('img/LOGO_Baner_JogawMarkach_60.webp')}}" style="width:80%; height:auto" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1">
+                            </a>
+                        </div>
+                        
+                        <div class="d-flex justify-content-end">
+                            <div id="nav-icon3" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+                <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNav">
+                        <ul class="navbar-nav ms-auto flex-nowrap">
+                            {# <li class="nav-item">
+                                <a href="#" class="nav-link"><i class="bi bi-house-door"></i></a>
+                            </li> #}
+                            <li class="nav-item">
+                                <a href="{{ path ('app_jogawmarkach_homepage')}}#onas" title="O nas" class="nav-link">O nas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ path ('app_jogawmarkach_homepage')}}#oferta" title="Oferta" class="nav-link">Oferta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ path ('app_jogawmarkach_homepage')}}#grafik" title="Grafik i cennik" class="nav-link">Grafik i cennik</a>
+                            </li>
+                            {# <li class="nav-item">
+                                <a href="#cennik" title="Cennik" class="nav-link">Cennik</a>
+                            </li> #}
+                            <li class="nav-item">
+                                <a href="{{ path ('app_jogawmarkach_homepage')}}#kontakt" title="Kontakt" class="nav-link">Kontakt</a>
+                            </li>
+                            {# <li class="nav-item">
+                                <a class="nav-link fitssey">
+                                    <!-- Fitssey Auth Widget -->
+                                    <lb-auth-widget
+                                        auth-callback="fit();"
+                                        signup-label="Rejestracja"
+                                        login-label="Zaloguj"
+                                    ></lb-auth-widget>
+                                    <!-- end of Fitssey Auth Widget -->
+                                </a>
+                            </li> #}
+
+
+                        </ul>
+                </div>
+            </nav>         
+        </header>
+
+        <div class="container min-vh-100" style="margin-top: 68px;">
+            <h1 class="mt-5 mb-5 text-center">Polityka prywatności <br>Studia JogawMarkach.pl</h1>
+            <p><strong>§ 1. POSTANOWIENIA OGÓLNE</strong></p>
+            <ol>
+                <li>Administratorem danych jest Klub JogawMarkach.pl, prowadzony przez BenMedia Bernard Waszczyk, NIP: 113-099-40-63, adres: ul. Tęczowa 3a/2, 05-270 Marki.</li>
+                <li>Dla interpretacji terminów stosuje się <a href="https://fitssey-prod-cdn.storage.googleapis.com/uploads/studio/445A6CF2-636F-4252-9059-6B2B000C13CE/terms/e2d90f02fb93865770824832347db6c46b2386f5.pdf">Regulamin</a> lub tak jak zostało to opisane w Polityce Prywatności (jeżeli wynika to bezpośrednio z opisu).</li>
+                <li>Ochrona danych odbywa się zgodnie z wymogami powszechnie obowiązujących przepisów prawa, w szczególności Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE.</li>
+                <li>Administrator zobowiązuje się do dołożenia starań w celu zachowania należytego zabezpieczenia danych osobowych Klubowicza.</li>
+                <li>Dane osobowe przetwarzane przez Klub są traktowane jako poufne i nie są widoczne dla osób nieuprawnionych.</li>
+            </ol>
+
+            <p><strong>§ 2. ADMINISTRATOR DANYCH</strong></p>
+
+            <ol>
+                <li>Klub JogawMarkach.pl jest Administratorem danych Klubowiczów.</li>
+                <li>Klub do rejestracji klubowiczów na zajęcia wykorzystuje system rezerwacyjny Fitssey, w którym gromadzone są dane kontaktowe Klubowiczów wykorzystywane przez Klub wyłącznie do komunikacji z Klubowiczem. Z Polityką Prywatności systemu Fitssey można zapoznać się tutaj: <a href="https://fitssey.com/pl/legal">https://fitssey.com/pl/legal</a>.</li>
+                <li>Oznacza to, że jeśli Klubowicz dokonuje rezerwacji miejsca na zajęcia, to Klub przetwarza takie dane Klubowicze, jak:
+                <ul>
+                    <li>imię,</li>
+                    <li>nazwisko,</li>
+                    <li>adres e-mail,</li>
+                    <li>numer telefonu.</li>
+                </ul>
+                </li>
+                <li>Dane osobowe przetwarzane są:
+                <ul>
+                    <li>zgodnie z przepisami dotyczącymi ochrony danych osobowych,</li>
+                    <li>zgodnie z wdrożoną Polityką Prywatności,</li>
+                    <li>w zakresie i celu realizacji Usług świadczonych przez Studio (m.in. utrzymanie konta Klubowicza, realizowania zakupów, udostępnienie rezerwacji, kontakt związany z wykonaniem umowy, a także przesyłanie informacji marketingowych, w tym newslettera),</li>
+                    <li>w zakresie i celu niezbędnym do wypełnienia uzasadnionych interesów, a przetwarzanie nie narusza praw i wolności osoby, której dane dotyczą w zakresie i celu zgodnym ze zgodą wyrażoną przez Klubowicza.</li>
+                </ul>
+                </li>
+                <li>Dane osobowe przetwarzane będą przez czas niezbędny do zapewnienia możliwości uczestnictwa w zajęciach, wyjazdach lub warsztatach.</li>
+                <li>Każdy Klubowicza ma prawo dostępu do danych, sprostowania, usunięcia (tzw. prawo do zapomnienia) lub ograniczenia przetwarzania, prawo sprzeciwu i prawo wniesienia skargi do organu nadzorczego zajmującego się ochroną danych osobowych – Prezesa Urzędu Ochrony Danych Osobowych.</li>
+                <li>Kontakt z osobą nadzorującą przetwarzanie danych osobowych w Studiu JogawMarkach.pl jest możliwy drogą elektroniczną pod adresem e-mail: <a href="mailto:kontakt@jogawmarkach.pl">kontakt@jogawmarkach.pl</a>.</li>
+                <li>Klub zastrzega sobie prawo do przetwarzania danych Klubowiczów po cofnięciu zgody tylko w zakresie na potrzeby dochodzenia ewentualnych roszczeń przed sądem lub jeżeli przepisy krajowe albo unijne bądź prawa międzynarodowego obligują Klub do retencji danych.</li>
+                <li>Studio ma prawo udostępniać dane osobowe Klubowicza oraz innych jego danych podmiotom upoważnionym na podstawie właściwych przepisów prawa (np. organom ścigania).</li>
+                <li>Usunięcie danych osobowych może nastąpić na skutek cofnięcia zgody bądź wniesienia prawnie dopuszczalnego sprzeciwu na przetwarzanie danych osobowych.</li>
+                <li>Dane osobowe mogą być przekazywane podmiotom trzecim, do których obecnie należą:
+                <ul>
+                    <li>operator płatności Przelewy24 - usługi świadczonej przez PayPro S.A. z siedzibą w Poznaniu przy ul. Pastelowej 8, 60-198 Poznań, wpisanej do Rejestru Przedsiębiorców Krajowego Rejestru Sądowego prowadzonego przez Sąd Rejonowy Poznań Nowe Miasto i Wilda, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000347935, numer NIP 7792369887.</li>
+                </ul>
+                </li>
+                <li>Dane osobowe przetwarzają osoby wyłącznie upoważnione przez Klub albo przetwarzający, z którymi Klub ściśle współpracuje.</li>
+            </ol>
+
+            <p><strong>3. PLIKI COOKIES</strong></p>
+
+            <p>Serwis internetowy JogawMarkach.pl, zwany w dalszej części „Serwisem” nie zbiera w sposób automatyczny żadnych informacji, z wyjątkiem informacji zawartych w plikach cookies.</p>
+
+            <ol>
+                <li>Pliki cookies (tzw. „ciasteczka”) stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym Użytkownika Serwisu i przeznaczone są do korzystania ze stron internetowych Serwisu. Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer.</li>
+                <li>Pliki cookies wykorzystywane są w celu:
+                <ul>
+                    <li>dostosowania zawartości stron internetowych Serwisu do preferencji Użytkownika oraz optymalizacji korzystania ze stron internetowych; w szczególności pliki te pozwalają rozpoznać urządzenie Użytkownika Serwisu i odpowiednio wyświetlić stronę internetową, dostosowaną do jego indywidualnych potrzeb;</li>
+                    <li>tworzenia statystyk, które pomagają zrozumieć, w jaki sposób Użytkownicy Serwisu korzystają ze stron internetowych, co umożliwia ulepszanie ich struktury i zawartości;</li>
+                </ul>
+                </li>
+                <li>W ramach Serwisu stosowane są dwa zasadnicze rodzaje plików cookies: „sesyjne” (session cookies) oraz „stałe” (persistent cookies). Cookies „sesyjne” są plikami tymczasowymi, które przechowywane są w urządzeniu końcowym Użytkownika do czasu wylogowania, opuszczenia strony internetowej lub wyłączenia oprogramowania (przeglądarki internetowej). „Stałe” pliki cookies przechowywane są w urządzeniu końcowym Użytkownika przez czas określony w parametrach plików cookies lub do czasu ich usunięcia przez Użytkownika.</li>
+                <li>W ramach Serwisu mogą być stosowane następujące rodzaje plików cookies:
+                <ul>
+                    <li>„niezbędne” pliki cookies, umożliwiające korzystanie z usług dostępnych w ramach Serwisu, np. uwierzytelniające pliki cookies wykorzystywane do usług wymagających uwierzytelniania w ramach Serwisu;</li>
+                    <li>pliki cookies służące do zapewnienia bezpieczeństwa, np. wykorzystywane do wykrywania nadużyć w zakresie uwierzytelniania w ramach Serwisu;</li>
+                    <li>„wydajnościowe” pliki cookies, umożliwiające zbieranie informacji o sposobie korzystania ze stron internetowych Serwisu;</li>
+                    <li>„funkcjonalne” pliki cookies, umożliwiające „zapamiętanie” wybranych przez Użytkownika ustawień i personalizację interfejsu Użytkownika, np. w zakresie wybranego języka lub regionu, z którego pochodzi Użytkownik, rozmiaru czcionki, wyglądu strony internetowej itp.;</li>
+                    <li>„reklamowe” pliki cookies, umożliwiające dostarczanie Użytkownikom treści reklamowych bardziej dostosowanych do ich zainteresowań.</li>
+                </ul>
+                </li>
+                <li>W wielu przypadkach oprogramowanie służące do przeglądania stron internetowych (przeglądarka internetowa) domyślnie dopuszcza przechowywanie plików cookies w urządzeniu końcowym Użytkownika. Użytkownicy Serwisu mogą dokonać w każdym czasie zmiany ustawień dotyczących plików cookies. Ustawienia te mogą zostać zmienione w szczególności w taki sposób, aby blokować automatyczną obsługę plików cookies w ustawieniach przeglądarki internetowej bądź informować o ich każdorazowym zamieszczeniu w urządzeniu Użytkownika Serwisu. Szczegółowe informacje o możliwości i sposobach obsługi plików cookies dostępne są w ustawieniach oprogramowania (przeglądarki internetowej).</li>
+                <li>Operator Serwisu informuje, że ograniczenia stosowania plików cookies mogą wpłynąć na niektóre funkcjonalności dostępne na stronach internetowych Serwisu.</li>
+                <li>Pliki cookies zamieszczane w urządzeniu końcowym Użytkownika Serwisu i wykorzystywane mogą być również przez współpracujących z operatorem Serwisu reklamodawców oraz partnerów.</li>
+                <li>Więcej informacji na temat plików cookies dostępnych jest pod adresem <a href="https://wszystkoociasteczkach.pl">https://wszystkoociasteczkach.pl</a> lub w sekcji „Pomoc” w menu przeglądarki internetowej.</li>
+            </ol>
+        </div>
+    </div>
+{% endblock %}
