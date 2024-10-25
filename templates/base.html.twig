@@ -2,7 +2,7 @@
 <html lang="pl-PL">
     <head>
         <title>{% block title %}Joga i pilates Marki{% endblock %}</title>
-        <link rel="icon" href="{{ asset ('img/favicon.ico')}}">
+        <link rel="icon" href="{{ asset('images/favicon.ico')}}">
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Joga i pilates Marki - praktyka jogi (vinyasa, hatha) i ćwiczenia pilates dla dorosłych. Dla początkujących i średnio zaawansowanych." />
@@ -15,8 +15,8 @@
         <meta property="og:description" content="Pilates i joga w Markach - praktyka jogi (vinyasa, hatha) i ćwiczenia pilates dla dorosłych. Dla początkujących i średnio zaawansowanych." />
         <meta property="og:url" content="https://jogawmarkach.pl/" />
         <meta property="og:site_name" content="Joga w Markach" />
-        <meta property="og:image" content="{{ asset ('img/Kasia_logo_ok_1200x628_new2.png')}}" />
-        <meta property="og:image:secure_url" content="{{ asset ('img/Kasia_logo_ok_1200x628_new2.png')}}" />
+        <meta property="og:image" content="{{ asset('images/Kasia_logo_ok_1200x628_new2.png')}}" />
+        <meta property="og:image:secure_url" content="{{ asset('images/Kasia_logo_ok_1200x628_new2.png')}}" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="628" />
         <meta property="og:image:type" content="image/png" />
@@ -39,9 +39,9 @@
         {% include 'TagGoogleBody.html.twig' %}
 
         <!-- Preloader -->
-        {# <div class="loader-container">
+        <div class="loader-container">
             <div class="custom-loader"></div>
-        </div> #}
+        </div>
         <!-- Preloader -->
 
             {% block body %}{% endblock %}

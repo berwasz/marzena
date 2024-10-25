@@ -5,24 +5,22 @@
 
 {% block body %}
 
-<!-- Modal - zmiana siedziby-->
+<!-- Modal - joga hormonalna warsztat -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg">
     <div class="modal-content">
-      <div class="modal-header d-block text-center">
+      {# <div class="modal-header d-block text-center">
         <h2 class="modal-title" id="exampleModalLabel">📢WAŻNE OGŁOSZENIE📢</h2>
-        {# <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> #}
-      </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> #}
       <div class="modal-body text-center">
-        <p>Trwa wakacyjna przerwa! 🌴</p>
-        <p>Zapraszamy na zajęcia od 15 września do nowej siedziby na Legionowej 1B.</p>
-        <p>(to tylko 3 minuty autem, 5 rowerem lub 20 piechotą 😉)</p>
-        <img src="{{ asset ('images/pastelowa_legionowa.webp')}}" width="80%" alt="Mapa dojazdu na Legionową" title="Pastelowa-Legionowa" class="mapa-dojazdu pb-2">
-        <p>Do zobaczenia na macie 🧘‍♀️, Kasia</p>
+        <img src="{{ asset ('images/joga_hormonalna.webp')}}" width="100%" alt="Mapa dojazdu na Legionową" title="Pastelowa-Legionowa" class="mapa-dojazdu pb-2">
+        <p></p>
+        <p>Zapraszamy na wyjątkowy warsztat jogi hormonalnej, skierowany do wszystkich, którzy pragną zharmonizować pracę swojego układu hormonalnego, złagodzić objawy związane z wahaniami hormonów i wspierać zdrowie na wielu poziomach.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
-        {# <a href="https://www.facebook.com/events/1514005132505232/" target="_blank"><button type="button" class="btn btn-primary">Weź udział w wydarzeniu</button></a> #}
+        <a href="https://app.fitssey.com/jogawmarkach/frontoffice/courses/2D377622-B0C9-4ADA-8EA8-1777B46AE939/overview" target="_blank"><button type="button" class="btn btn-primary">Dowiedz sie więcej</button></a>
       </div>
     </div>
   </div>
@@ -42,9 +40,11 @@
                 <div id="belka" class="container-fluid d-flex flex-row flex-nowrap">
                 
                         <div class="navbar-brand d-flex align-items-center">
-                        <img src="{{ asset ('images/LOGO_JogawMarkach_profilowe_fb_bez_tla.webp')}}" width="60" height="60" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1">
-                        <img src="{{ asset ('images/LOGO_Baner_JogawMarkach_60.webp')}}" style="width:80%; height:auto" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1">
-                            {# JogawMarkach.pl | Joga i Pilates #}
+                            
+                            <img src="{{ asset ('images/LOGO_JogawMarkach_profilowe_fb_bez_tla.webp')}}" width="60" height="60" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1">
+                            <img src="{{ asset ('images/LOGO_Baner_JogawMarkach_60.webp')}}" style="width:80%; height:auto" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1">
+                                {# JogawMarkach.pl | Joga i Pilates #}
+                            
                         </div>
                         
                         <div class="d-flex justify-content-end pe-1">
@@ -64,13 +64,13 @@
                                 <a href="#" class="nav-link"><i class="bi bi-house-door"></i></a>
                             </li> #}
                             <li class="nav-item">
-                                <a href="#onas" title="O nas" class="nav-link">O nas</a>
+                                <a href="#onas" target="_top" title="O nas" class="nav-link">O nas</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#oferta" title="Oferta" class="nav-link">Oferta</a>
+                                <a href="#oferta" target="_top" title="Oferta" class="nav-link">Oferta</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#grafik" title="Grafik i cennik" class="nav-link">Grafik i cennik</a>
+                                <a href="#grafik" target="_top" title="Grafik i cennik" class="nav-link">Grafik i cennik</a>
                             </li>
                             {# <li class="nav-item">
                                 <a href="#cennik" title="Cennik" class="nav-link">Cennik</a>
@@ -169,7 +169,7 @@
                     <div data-aos="fade-up" class="col-md-6 gx-5 mt-4">
                         <h2><strong>Miejsce</strong></h2>
                         <p class="lead">
-                        Ćwiczymy w nowym studiu na ul. Legionowej 1B w Markach (nad apteką).
+                        Ćwiczymy w nowym studiu na ul. Legionowej 1 w Markach (nad apteką).
                         </p>
                         <p data-aos="zoom-out" data-aos-offset="80" data-aos-delay="100" class="m-1 text-center">
                             <a id="maps-gora" class="p-2 text-body-secondary" href="https://maps.app.goo.gl/8e43LpAi1LE6PQqb9" target="_blank" title="google maps">
@@ -314,7 +314,7 @@
       <section id="grafik">
         <h2 data-aos="fade-up" class="display-2 mb-5 text-center"><strong>Grafik i cennik</strong></h2>
         <div class="container col-md-8">
-            <p data-aos="fade-up">Zachęcamy do założenia konta na platformie Fitssey, przez kórą można zapisywać się na zajęcia (zakładka GRAFIK), a już niedługo będzie też można zakupić karnety online (zakładka CENNIK).</p>
+            <p data-aos="fade-up">Zachęcamy do założenia konta na platformie Fitssey, przez kórą można zapisywać się na zajęcia (zakładka GRAFIK w oknie poniżej) i zakupić karnety online (zakładka CENNIK w oknie poniżej).</p>
             <p data-aos="fade-up">Wymaga to rejestracji, ale proces jest bardzo prosty.<br>
             Można to zrobić w oknie poniżej lub bezpośrednio na dedykowanej stronie <a style="text-decoration: none;" href="https://app.fitssey.com/jogawmarkach/frontoffice/login">Fitssey</a>.</p>
             <p data-aos="fade-up">Można też korzystać z aplikacji mobilnej Fitssey:</p>
@@ -322,12 +322,12 @@
                     <a href="https://play.google.com/store/apps/details?id=com.fitssey&pli=1" target="_blank"><img class="m-2 google-play" src="{{ asset('images/google_play.webp') }}" alt="Logo Google Play"></a>
                     <a href="https://apps.apple.com/pl/app/fitssey/id1438775177?l=pl" target="_blank"><img class="m-2 app-store" src="{{ asset('images/appstore.webp') }}" alt="Logo App Store"></a>
                 </div>
-            <p data-aos="fade-up">Płatności przyjmujemy na razie tylko miejscu - gotówką, kartą lub Blikiem.</p>
+            <p data-aos="fade-up">Płatności online są obsługiwane przez Przelewy24. Możliwa jest też płatność na miejscu - gotówką, kartą lub Blikiem.</p>
             <p data-aos="fade-up">Na życzenie wystawiamy faktury VAT, jednak trzeba to zgłosić niezwłocznie po dokonaniu transakcji albo lepiej wcześniej!</p>
-            <p data-aos="fade-up">Linki do Regulaminu i Polityki prywatności znajdziesz na samym dole strony.</p>
+            <p class="text-center" data-aos="fade-up"><a style="text-decoration: none;" href={{ path('app_jogawmarkach_regulamin') }}>Regulamin</a> | <a style="text-decoration: none;" href={{ path('app_jogawmarkach_polityka_prywatnosci') }}>Polityka prywatności</a> | <a style="text-decoration: none;" href="{{ asset('files/zgoda_niepelnoletni.pdf')}}" target="_blank">Oświadczenie dla niepełnoletnich</a></p>
         </div>
         <hr>
-        <div data-aos="fade-up" class="min-vh-100">
+        <div class="fitssey">
         <!-- Fitssey Schedule Widget -->
         <lb-schedule-widget></lb-schedule-widget>
         <!-- end of Fitssey Schedule Widget -->
@@ -488,11 +488,13 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content shadow border-0">
                 <div class="modal-header border-0">
-                    <p class="modal-title fs-5" id="staticBackdropLabelTel">+48 603 250 073</p>
+                    {# <p class="modal-title fs-5" id="staticBackdropLabelTel">+48 603 250 073</p> #}
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-header">
-                    <p class="modal-title fs-5" id="">Telefon odbierze Bernard</p>
+                <div class="modal-body">
+                    <p class="modal-title fs-5" id="">606 671 190&nbsp-&nbspKasia</p>
+                    <p></p>
+                    <p class="modal-title fs-5" id="">603 250 073&nbsp-&nbspBernard</p>
                 </div>
                 {# <div class="modal-body">
                 </div> #}
@@ -521,7 +523,7 @@
 
             <div class="social d-flex justify-content-center col-md-6 p-0">
                 <span data-aos="zoom-out" data-aos-offset="80" data-aos-delay="500" class="m-1 text-center"><a class="social-icon p-2 text-body-secondary"
-                    href="https://www.facebook.com/KasiaLatekJoga" target="_blank" title="facebook"><i
+                    href="https://www.facebook.com/JogawMarkach" target="_blank" title="facebook"><i
                     class="bi bi-facebook"></i></a></span>
                 <span data-aos="zoom-out" data-aos-offset="80" data-aos-delay="300" class="m-1"><a class="social-icon p-2 text-body-secondary"
                     href="https://www.instagram.com/kasia_latek" target="_blank" title="instagram"><i

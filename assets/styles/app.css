@@ -87,7 +87,9 @@ hr {
 @media (min-width: 768px) {
     .fc .fc-toolbar-title {
         text-align: left;
-        
+    }
+    .fitssey {
+        min-height: 100vh;
     }
 }
 
@@ -248,10 +250,6 @@ li.lb-auth-widget__nav__item {
         width: 100%;
         display: block;
         
-    }
-
-    .fitssey {
-        padding: 0;
     }
 
     .lb-auth-widget__wrapper {

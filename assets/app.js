@@ -194,7 +194,9 @@ document.querySelector('#rok').innerHTML = year;
 
 const myModal = new bootstrap.Modal("#exampleModal");
 if(myModal) {
-  myModal.show();
+  	setTimeout(function(){
+    	myModal.show();
+  	}, 5000);
 }
 
 // document.onscroll = function() {
