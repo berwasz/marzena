@@ -1,10 +1,10 @@
-import './bootstrap.js';
+//import './bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.min.css';
-import '@popperjs/core';
-import '@symfony/stimulus-bundle';
-import '@hotwired/stimulus';
+//import '@popperjs/core';
+//import '@symfony/stimulus-bundle';
+//import '@hotwired/stimulus';
 import './styles/app.css';
 
 import 'jquery';
@@ -192,12 +192,12 @@ const date = new Date();
 const year = date.getFullYear();
 document.querySelector('#rok').innerHTML = year;
 
-const myModal = new bootstrap.Modal("#exampleModal");
-if(myModal) {
-  	setTimeout(function(){
-    	myModal.show();
-  	}, 5000);
-}
+// const myModal = new bootstrap.Modal("#exampleModal");
+// if(myModal) {
+//   	setTimeout(function(){
+//     	myModal.show();
+//   	}, 5000);
+// }
 
 // document.onscroll = function() {
 //     setTimeout(myModal.show())

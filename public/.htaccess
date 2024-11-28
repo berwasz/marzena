@@ -1,0 +1,24 @@
+ErrorDocument 404 /
+
+<FilesMatch "\.(?i:gif|jpe?g|png|ico|css|js|swf|webp|woff|woff2)$">
+
+  <IfModule mod_headers.c>
+    Header set Cache-Control "max-age=2592000, public, must-revalidate"
+  </IfModule>
+
+</FilesMatch>
+
+RewriteEngine On
+
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^app\.php(/(.*)|$) %{ENV:BASE}/$2 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{THE_REQUEST} ^.*/index\.(php|html)
+RewriteRule ^(.*)index.(php|html)$ /$1 [R=301,L]
+
