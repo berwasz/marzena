@@ -39,12 +39,12 @@ hr {
 
 @media (max-width: 575px) {
     #intro {
-        background-image: url('../images/pomost_hp_lq_mobile.webp') !important;
+        background-image: url('../images/main_mobile.webp') !important;
     }
 }
 
 #intro {
-    background-image: url('../images/pomost_hp_lq.webp');
+    background-image: url('../images/main.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
