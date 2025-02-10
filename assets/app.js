@@ -192,7 +192,7 @@ const date = new Date();
 const year = date.getFullYear();
 document.querySelector('#rok').innerHTML = year;
 
-// const myModal = new bootstrap.Modal("#exampleModal");
+const myModal = new bootstrap.Modal("#exampleModal");
 
 // if(myModal) {
 //   	setTimeout(function(){
@@ -204,11 +204,11 @@ document.querySelector('#rok').innerHTML = year;
 //     setTimeout(myModal.show())
 // };
 // 
-// window.addEventListener('load', function () {
-// 	setTimeout(function(){
-//     	myModal.show();
-// 	}, 2000);
-// });
+window.addEventListener('load', function () {
+	setTimeout(function(){
+    	myModal.show();
+	}, 2000);
+});
 
 
 
