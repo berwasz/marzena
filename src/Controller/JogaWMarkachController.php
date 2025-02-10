@@ -23,4 +23,10 @@ class JogaWMarkachController extends AbstractController
     public function politpryw(): Response {
         return $this->render('polityka_prywatnosci.html.twig');
     }
+
+    #[Route('/warsztat-dno-miednicy', name: 'dnomiednicy')]
+    public function dnoMiednicy(): Response
+    {
+        return $this->render('dnomiednicy.html.twig');
+    }
 }

@@ -6,6 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.min.css';
 //import '@symfony/stimulus-bundle';
 //import '@hotwired/stimulus';
 import './styles/app.css';
+import './styles/dnomiednicy.css';
 
 import 'jquery';
 
