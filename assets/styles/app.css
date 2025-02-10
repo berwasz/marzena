@@ -217,6 +217,10 @@ li.lb-auth-widget__nav__item {
     
 }
 
+.navbar {
+    background-color: #fef9f3 !important;
+}
+
 @media (max-width: 991px) {
 
     .carousel-indicators {
@@ -505,9 +509,9 @@ li.lb-auth-widget__nav__item {
     height: 10vh;
   }
 
-  .belka {
+  /* #belka {
     flex-wrap: nowrap !important;
-  }
+  } */
 
   @media (max-width: 768px) {
     #stopka {

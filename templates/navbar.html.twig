@@ -1,0 +1,38 @@
+<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary shadow">
+	<div class="container-fluid">
+		<div class="navbar-brand container-fluid d-flex align-items-center justify-content-between flex-nowrap">
+			<div class="logo d-flex align-items-center justify-content-between">
+				{# <a href="{{ path ('app_jogawmarkach_homepage')}}#top"> #}
+					<img src="{{ asset ('images/LOGO_JogawMarkach_profilowe_fb_bez_tla.webp')}}" width="60" height="60" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1">
+				{# </a> #}
+				<a href="{{ path ('app_jogawmarkach_homepage')}}">
+					<img src="{{ asset ('images/LOGO_Baner_JogawMarkach_60.webp')}}" style="width:80%; height:auto" alt="Logo" title="JogawMarkach.pl | Joga i Pilates" class="d-inline-block align-text-top me-1">
+				</a>
+			</div>
+			<div class="d-flex">
+				<div id="nav-icon3" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNav">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a href="{{ path ('app_jogawmarkach_homepage')}}#onas" title="O nas" class="nav-link">O nas</a>
+				</li>
+				<li class="nav-item">
+					<a href="{{ path ('app_jogawmarkach_homepage')}}#oferta" title="Oferta" class="nav-link">Oferta</a>
+				</li>
+				<li class="nav-item">
+					<a href="{{ path ('app_jogawmarkach_homepage')}}#grafik" title="Grafik i cennik" class="nav-link">Grafik i cennik</a>
+				</li>
+				<li class="nav-item">
+					<a href="{{ path ('app_jogawmarkach_homepage')}}#kontakt" title="Kontakt" class="nav-link">Kontakt</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

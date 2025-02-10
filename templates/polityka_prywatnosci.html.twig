@@ -12,7 +12,8 @@
         </button>
 
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg bg-light p-0 shadow" style="padding: 10px 0 10px 0 !important; min-height: 68px; background-color: #fef9f3 !important;">
+        {% include 'navbar.html.twig' %}
+            {# <nav class="navbar fixed-top navbar-expand-lg bg-light p-0 shadow" style="padding: 10px 0 10px 0 !important; min-height: 68px; background-color: #fef9f3 !important;">
                 <div id="belka" class="container-fluid d-flex flex-row flex-nowrap">
                 
                         <div class="navbar-brand d-flex align-items-center">
@@ -34,9 +35,6 @@
                 </div>
                 <div class="collapse navbar-collapse flex-grow-1 text-center" id="navbarNav">
                         <ul class="navbar-nav ms-auto flex-nowrap">
-                            {# <li class="nav-item">
-                                <a href="#" class="nav-link"><i class="bi bi-house-door"></i></a>
-                            </li> #}
                             <li class="nav-item">
                                 <a href="{{ path ('app_jogawmarkach_homepage')}}#onas" title="O nas" class="nav-link">O nas</a>
                             </li>
@@ -46,28 +44,12 @@
                             <li class="nav-item">
                                 <a href="{{ path ('app_jogawmarkach_homepage')}}#grafik" title="Grafik i cennik" class="nav-link">Grafik i cennik</a>
                             </li>
-                            {# <li class="nav-item">
-                                <a href="#cennik" title="Cennik" class="nav-link">Cennik</a>
-                            </li> #}
                             <li class="nav-item">
                                 <a href="{{ path ('app_jogawmarkach_homepage')}}#kontakt" title="Kontakt" class="nav-link">Kontakt</a>
                             </li>
-                            {# <li class="nav-item">
-                                <a class="nav-link fitssey">
-                                    <!-- Fitssey Auth Widget -->
-                                    <lb-auth-widget
-                                        auth-callback="fit();"
-                                        signup-label="Rejestracja"
-                                        login-label="Zaloguj"
-                                    ></lb-auth-widget>
-                                    <!-- end of Fitssey Auth Widget -->
-                                </a>
-                            </li> #}
-
-
                         </ul>
                 </div>
-            </nav>         
+            </nav>          #}
         </header>
 
         <div class="container min-vh-100" style="margin-top: 68px;">
