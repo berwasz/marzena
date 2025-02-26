@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="bootstrap-icons.min.css">
         <link rel="stylesheet" href="dnomiednicy.css">
                 
-        {% include 'PixelFbHead.html.twig' %}
+        
 
         {% include 'TagGoogleHead.html.twig' %}
 
@@ -39,8 +39,13 @@
         {# {% block javascripts %}
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %} #}
+        {% include 'PixelFbHead.html.twig' %}
     </head>
     <body>
+
+        <script>
+            fbq('track', 'ViewContent');
+        </script>
 
         {% include 'TagGoogleBody.html.twig' %}
 
