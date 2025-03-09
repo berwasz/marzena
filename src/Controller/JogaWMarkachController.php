@@ -27,6 +27,7 @@ class JogaWMarkachController extends AbstractController
     #[Route('/warsztat-dno-miednicy', name: 'dnomiednicy')]
     public function dnoMiednicy(): Response
     {
-        return $this->render('dnomiednicy.html.twig');
+        return $this->redirectToRoute('app_jogawmarkach_homepage');
+        // return $this->render('dnomiednicy.html.twig');
     }
 }
