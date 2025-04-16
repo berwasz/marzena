@@ -192,7 +192,8 @@ const date = new Date();
 const year = date.getFullYear();
 document.querySelector('#rok').innerHTML = year;
 
-const myModal = new bootstrap.Modal("#exampleModal");
+/* PONIŻSZĄ LINIĘ RZEBA ODKOMENTOWAĆ DODAJĄC MODAL */
+// const myModal = new bootstrap.Modal("#exampleModal");
 
 // if(myModal) {
 //   	setTimeout(function(){
@@ -204,11 +205,14 @@ const myModal = new bootstrap.Modal("#exampleModal");
 //     setTimeout(myModal.show())
 // };
 // 
-window.addEventListener('load', function () {
-	setTimeout(function(){
-    	myModal.show();
-	}, 2000);
-});
+
+
+/* PONIŻSZE TRZEBA ODKOMENTOWAĆ DODAJĄC MODAL */
+// window.addEventListener('load', function () {
+// 	setTimeout(function(){
+//     	myModal.show();
+// 	}, 2000);
+// });
 
 
 
